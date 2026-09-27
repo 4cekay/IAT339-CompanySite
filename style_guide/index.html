@@ -9,7 +9,7 @@
 
   <body>
     <header>
-      <h1>Rock Band Website Style Guide</h1>
+      <h1>Rock Artist Website Style Guide</h1>
 
       <p>Website style guide for a rock band's official artist page.</p>
 
@@ -30,6 +30,13 @@
       <section class="element">
         <h3>In-text link</h3>
 
+        <h4>CSS Selectors:</h4>
+        <p>
+          .list-link
+          <br />
+          .in-text-link
+        </p>
+
         <!-- Reference: Lab code sample embedding for syntax -->
 
         <h4>Sample Code:</h4>
@@ -37,12 +44,7 @@
         <!-- Reference for <pre> formatting for longer code snippet display: https://stackoverflow.com/questions/21646408/how-do-i-use-indentation-in-a-code-tag -->
 
         <pre class="code-block">
-          <code>&lt;p&gt;
-  [ROCK BAND NAME] is a gothic rock musical group consisting of 3 members:
-&lt;/p&gt;
-
-&lt;ul&gt;
-
+          <code>&lt;ul&gt;
   &lt;li&gt;
     &lt;a&gt;
       class="list-link"
@@ -63,7 +65,6 @@
       href="#member-c-profile"
     &lt;/a&gt;: keyboardist, rhythm guitarist, and lyricist
   &lt;/li&gt;
-  
 &lt;/ul&gt;
           </code>
         </pre>
@@ -128,35 +129,213 @@
       </section>
 
       <!-- Default Button styling section -->
+      <!-- Form elements reference: 
+       https://learn.shayhowe.com/html-css/building-forms/ 
+       https://www.w3schools.com/tags/att_input_type_reset.asp-->
+
       <section class="element">
         <h3>Navigation Link</h3>
 
-        <h4>CSS selector:</h4>
+        <h4>CSS Selector:</h4>
         <p>.button-nav</p>
 
-        <h4>Sample code:</h4>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+        <h4>Sample Code:</h4>
+        <code>&lt;a href="#latest" class="button-nav"&gt;Latest&lt;/a&gt;</code>
 
-        <h4>Rendered element:</h4>
-        <a class="button-nav" href="#">Default Button</a>
-      </section>
-
-      <section class="element">
-        <h3>Submit/Reset Buttons</h3>
+        <h4>Rendered Element:</h4>
+        <p>
+          Example of a navigation bar button that would lead to a section with
+          updates and announcements.
+        </p>
+        <a class="button-nav" href="#latest">Latest</a>
       </section>
 
       <section class="element">
         <h3>Text Input Field with Label</h3>
+        <h4>CSS Selectors:</h4>
+        <p>
+          .input-label
+          <br />
+          .input-field
+        </p>
+        <h4>Sample Code:</h4>
+        <code>
+          &lt;label class="input-label" for="text-input"&gt;Email Address:
+          &lt;label&gt;
+          <br />
+          &lt;input id="text-input" class="input-field" type="text"
+          placeholder="e.g. you@email.com"&gt;
+        </code>
+
+        <h4>Rendered Element:</h4>
+        <p>
+          Example of a text input field with a label on a newsletter
+          subscription form:
+        </p>
+
+        <p>
+          Enter your email address below to subscribe to our newsletter and
+          receive updates on new releases, tour dates, and exclusive content!
+        </p>
+
+        <label class="input-label" for="text-input">Email Address: </label>
+        <input
+          id="text-input"
+          class="input-field"
+          type="text"
+          placeholder="e.g. you@email.com"
+        />
+      </section>
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+        <h4>CSS Selectors:</h4>
+        <p>
+          .button-submit
+          <br />
+          .button-reset
+        </p>
+
+        <h4>Sample Code:</h4>
+
+        <code>
+          &lt;input class="button-submit" type="submit" value="Submit"&gt;
+          <br />
+          &lt;input class="button-reset" type="reset" value="Reset All
+          Fields"&gt;
+        </code>
+
+        <h4>Rendered Element:</h4>
+
+        <p>
+          Example of submit and reset buttons on fanclub/tour presale signup
+          forms.
+        </p>
+
+        <input class="button-submit" type="submit" value="Submit" />
+        <input class="button-reset" type="reset" value="Reset All Fields" />
       </section>
 
       <section class="element">
         <h3>Radio Button with Label</h3>
-      </section>
 
-      <section class="element">
-        <h3>Image as a Link</h3>
+        <h4>CSS Selectors:</h4>
+        <p>
+          .radio-label
+          <br />
+          .radio-button
+        </p>
+
+        <h4>Sample Code:</h4>
+
+        <pre><code>&lt;label class="radio-label"&gt; 
+  &lt;input 
+    class="radio-button"
+    type="radio" 
+    name="payment-method" 
+    value="Credit/Debit" 
+    checked 
+  /&gt;
+  Credit/Debit 
+&lt;/label&gt;
+          <br />
+          
+&lt;label class="radio-label"&gt; 
+  &lt;input 
+    class="radio-button"
+    type="radio" 
+    name="payment-method" 
+    value="PayPal" 
+  /&gt; 
+  PayPal
+&lt;/label&gt;</code></pre>
+
+        <h4>Rendered Elements:</h4>
+        <p>
+          Example radio buttons and their labels used in a checkout form for
+          selecting payment and shipping methods when buying official
+          merchandise.
+        </p>
+
+        <div>
+          <h5>Payment Method:</h5>
+          <label class="radio-label">
+            <input
+              class="radio-button"
+              type="radio"
+              name="payment-method"
+              value="Credit/Debit"
+              checked
+            />
+            Credit/Debit
+          </label>
+          <label class="radio-label">
+            <input
+              class="radio-button"
+              type="radio"
+              name="payment-method"
+              value="PayPal"
+            />
+            PayPal
+          </label>
+          <label>
+            <input
+              class="radio-button"
+              type="radio"
+              name="payment-method"
+              value="Gift Card"
+            />
+            Gift Card
+          </label>
+        </div>
+        <div>
+          <h5>Shipping Method:</h5>
+          <label class="radio-label">
+            <input
+              class="radio-button"
+              type="radio"
+              name="shipping-method"
+              value="Regular Parcel"
+              checked
+            />
+            Regular Parcel
+          </label>
+          <label class="radio-label">
+            <input
+              class="radio-button"
+              type="radio"
+              name="shipping-method"
+              value="Expedited Parcel"
+            />
+            Expedited Parcel
+          </label>
+          <label class="radio-label">
+            <input
+              class="radio-button"
+              type="radio"
+              name="shipping-method"
+              value="Xpresspost"
+            />
+            Xpresspost
+          </label>
+          <label class="radio-label">
+            <input
+              class="radio-button"
+              type="radio"
+              name="shipping-method"
+              value="Priority"
+            />
+            Priority
+          </label>
+        </div>
       </section>
     </section>
+
+    <section class="element">
+      <h3>Image as a Link</h3>
+    </section>
+
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
     <!-- TEXT ELEMENTS SECTION // -->
