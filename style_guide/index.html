@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>P01: Semantic HTML</title>
+
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Rock Band Website Style Guide</h1>
+
+      <p>Website style guide for a rock band's official artist page.</p>
+
+      <nav>
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Styling</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="./pages/product_listing.html">Product Listings Template</a>
+        <a href="checkout.html">Checkout Template</a>
+        <a href="#citations">Citations</a>
+      </nav>
+    </header>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <section class="element">
+        <h3>In-text link</h3>
+
+        <!-- Reference: Lab code sample embedding for syntax -->
+
+        <h4>Sample Code:</h4>
+        <!-- List example code snippet  -->
+        <!-- Reference for <pre> formatting for longer code snippet display: https://stackoverflow.com/questions/21646408/how-do-i-use-indentation-in-a-code-tag -->
+
+        <pre class="code-block">
+          <code>&lt;p&gt;
+  [ROCK BAND NAME] is a gothic rock musical group consisting of 3 members:
+&lt;/p&gt;
+
+&lt;ul&gt;
+
+  &lt;li&gt;
+    &lt;a&gt;
+      class="list-link"
+      href="#member-a-profile"
+    &lt;/a&gt;: leader, drummer, vocalist, and composer, producer, and lyricist
+  &lt;/li&gt;
+
+  &lt;li&gt;
+    &lt;a&gt;
+      class="list-link"
+      href="#member-b-profile"
+    &lt;/a&gt;: lead guitarist, bassist, vocalist, and lyricist
+  &lt;/li&gt;
+
+  &lt;li&gt;
+    &lt;a&gt;
+      class="list-link"
+      href="#member-c-profile"
+    &lt;/a&gt;: keyboardist, rhythm guitarist, and lyricist
+  &lt;/li&gt;
+  
+&lt;/ul&gt;
+          </code>
+        </pre>
+
+        <!--  Paragraph example code snippet  -->
+        <pre class="code-block">
+          <code>&lt;p&gt;
+  The music video for 
+  &lt;a
+    class="in-text-link"
+    href="https://www.youtube.com/"
+    target="_blank"
+    &gt;[LEAD SINGLE]&lt;/a
+  &gt;
+  is finally here! This has been our favourite project to date, and we hope you love it as much as we loved making it!
+&lt;/p&gt;
+</code>
+        </pre>
+
+        <h4>Rendered Elements:</h4>
+
+        <!-- List elements text link  -->
+        <h5>
+          Within a list of artist descriptions, leading to individual profile
+          sections:
+        </h5>
+        <p>
+          [ROCK BAND NAME] is a gothic rock musical group consisting of 3
+          members:
+        </p>
+        <ul>
+          <li>
+            <a class="list-link" href="#member-a-profile"> Member A</a>: leader,
+            drummer, vocalist, and composer, producer, and lyricist
+          </li>
+          <li>
+            <a class="list-link" href="#member-b-profile"> Member B</a>: lead
+            guitarist, bassist, vocalist, and lyricist
+          </li>
+          <li>
+            <a class="list-link" href="#member-c-profile"> Member C</a>:
+            keyboardist, rhythm guitarist, and lyricist
+          </li>
+        </ul>
+
+        <!-- In-paragraph text link  -->
+        <h5>
+          Within text on a homepage, leading to an external site (e.g. YouTube)
+        </h5>
+
+        <p>
+          The music video for
+          <a
+            class="in-text-link"
+            href="https://www.youtube.com/"
+            target="_blank"
+            >[LEAD SINGLE]</a
+          >
+          is finally here! This has been our favourite project to date, and we
+          hope you love it as much as we loved making it!
+        </p>
+      </section>
+
+      <!-- Default Button styling section -->
+      <section class="element">
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a>
+      </section>
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+      </section>
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+      </section>
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+      </section>
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+      </section>
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+      </section>
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+      </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+      </section>
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>
+          Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>.
+          Retrieved from
+          <a
+            href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans"
+            >https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a
+          >
+        </li>
+        <li>
+          Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved
+          from <a href="#">URL</a>.
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
