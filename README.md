@@ -32,3 +32,18 @@
 - Fonts
 - Colour Palettes
 - Potential imagery or art direction
+
+#
+
+## P01 (05/10/26):
+
+### CSS application to achieve the following:
+- Clear type hierarchies
+- Clear cues to interaction points
+- Clear interaction point response (i.e. when I hover over a link, it changes)
+- Effective structure to clarify relationships of elements
+
+### Applied brand design and identity:
+- How font combinations will appear on the site (i.e. in headings and paragraphs vs. navigation)
+- Where colours are used, and how they are used to communicate information or interaction.
+- The types of imagery (icons, photos, etc) and their intended applications.
