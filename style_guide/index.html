@@ -5,6 +5,12 @@
     <title>P01: Semantic HTML</title>
 
     <link href="css/main.css" rel="stylesheet" />
+
+    <!-- Shopping Cart Icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart_checkout"
+    />
   </head>
 
   <body>
@@ -355,7 +361,7 @@
             album's section on the discography page of the website.
           </p>
 
-          <h5>ALBUM NAME</h5>
+          <h5>ALBUM NAME (2026)</h5>
 
           <figure>
             <a class="image-link" href="discography.html#album_name">
@@ -396,10 +402,120 @@
 
       <section class="element">
         <h3>Main Navigation</h3>
+        <h4>CSS Selectors:</h4>
+        <p>
+          #main-nav
+          <br />
+          .button-nav
+        </p>
+
+        <h4>Sample Code:</h4>
+        <pre><code>&lt;nav id="main-nav"&gt;
+  &lt;a class="button-nav" href="#latest"&gt;Latest&lt;/a&gt;
+  &lt;a class="button-nav" href="#artist"&gt;Artist&lt;/a&gt;
+  &lt;a class="button-nav" href="#music"&gt;Music&lt;/a&gt;
+  &lt;a class="button-nav" href="#tour"&gt;Tour&lt;/a&gt;
+  &lt;a class="button-nav" href="#store"&gt;Store&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+
+        <h4>Rendered Element:</h4>
+        <p>
+          Example of a navigation bar with buttons that would lead to relevant
+          sections/pages of the website.
+        </p>
+
+        <nav id="main-nav">
+          <a class="button-nav" href="#latest">Latest</a>
+          <a class="button-nav" href="#artist">Artist</a>
+          <a class="button-nav" href="#music">Music</a>
+          <a class="button-nav" href="#tour">Tour</a>
+          <a class="button-nav" href="store.html">Store</a>
+        </nav>
       </section>
 
       <section class="element">
-        <h3>Product/Service Listing</h3>
+        <h3>Merchandise Listings</h3>
+
+        <h4>CSS Selectors:</h4>
+        <p>
+          .product-listing
+          <br />
+          .product-name
+          <br />
+          .product-image
+          <br />
+          .price
+          <br />
+          .add-to-cart
+        </p>
+
+        <h4>Sample Code:</h4>
+
+        <pre><code>&lt;a href="store.html#item_01" class="product-listing"&gt;
+  &lt;p class="product-name"&gt;ALBUM NAME CD (Signed)&lt;/p&gt;
+  &lt;img
+    class="product-image"
+    src="./images/redcdcase_200x176px.png"
+    alt="ALBUM NAME CD - Signed by Artist"
+  /&gt;
+  &lt;p class="price"&gt;$19.99 CAD&lt;/p&gt;
+  &lt;button class="add-to-cart"&gt;Add to Cart&lt;/button&gt;
+&lt;/a&gt;</code></pre>
+
+        <h4>Rendered Element:</h4>
+
+        <div>
+          <a href="store.html#item_01" class="product-listing">
+            <p class="product-name">ALBUM NAME CD (Signed)</p>
+            <img
+              class="product-image"
+              src="./images/redcdcase_200x176px.png"
+              alt="ALBUM NAME CD - Signed by Artist"
+            />
+            <p class="price">$19.99 CAD</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </a>
+        </div>
+
+        <h3>Tour Listings</h3>
+
+        <h4>CSS Selectors</h4>
+        <p>
+          .tour-listing
+          <br />
+          .tour-location
+          <br />
+          .tour-listing-details
+          <br />
+          .tour-details-item
+          <br />
+          .tickets-link
+        </p>
+
+        <h4>Sample Code:</h4>
+
+        <pre><code>&lt;a href="https://www.ticketmaster.ca/" class="tour-listing"&gt;
+  &lt;p class="tour-location"&gt;City, Province&lt;/p&gt;
+  &lt;ul class="tour-listing-details"&gt;
+    &lt;li class="tour-details-item"&gt;Venue Name&lt;/li&gt;
+    &lt;li class="tour-details-item"&gt;Date&lt;/li&gt;
+    &lt;li class="tour-details-item"&gt;Time&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;button class="tickets-link"&gt;Get Tickets&lt;/button&gt;
+&lt;/a&gt;</code></pre>
+
+        <h4>Rendered Element:</h4>
+        <div>
+          <a href="https://www.ticketmaster.ca/" class="tour-listing">
+            <p class="tour-location">City, Province</p>
+            <ul class="tour-listing-details">
+              <li class="tour-details-item">Venue Name</li>
+              <li class="tour-details-item">Date</li>
+              <li class="details-item">Time</li>
+            </ul>
+            <button class="tickets-link">Get Tickets</button>
+          </a>
+        </div>
       </section>
 
       <section class="element">
@@ -430,6 +546,14 @@
           <a
             href="https://www.reddit.com/r/Yedits/comments/1cmlyi6/177_album_covers_free_to_use_for_comps_or_any/"
             >https://www.reddit.com/r/Yedits/comments/1cmlyi6/177_album_covers_free_to_use_for_comps_or_any/</a
+          >.
+        </li>
+        <li>
+          Sarddhaben. (Contributor). (N.D.).
+          <strong>Red CD Case [Image]</strong>. Retrieved from
+          <a
+            href="https://www.cleanpng.com/png-cd-cd-case-red-black-silver-red-cd-case-with-silve-m7ftkb/download-png.html"
+            >https://www.cleanpng.com/png-cd-cd-case-red-black-silver-red-cd-case-with-silve-m7ftkb/download-png.html</a
           >.
         </li>
         <li>
