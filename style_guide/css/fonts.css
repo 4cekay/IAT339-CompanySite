@@ -1,0 +1,74 @@
+/* Logotype */
+
+@font-face {
+  font-family: "Rothenburg Decorative";
+  src: url("./fonts/RothenburgDecorative.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logotype {
+  font-family: "Rothenburg Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Main Components*/
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("./fonts/InstrumentSerif-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Instrument Serif - Italic";
+  src: url("./fonts/InstrumentSerif-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+
+.main-title {
+  font-family: "Instrument Serif", serif;
+  font-weight: 600;
+  font-style: normal;
+
+  color: rgb(222, 218, 218);
+}
+
+.body-title {
+  font-family: "Instrument Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT2020 Style E";
+  src: url("./fonts/TT2020StyleE-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+.nav-link {
+  font-family: "TT2020 Style E", serif;
+  font-weight: 200;
+  font-style: normal;
+  color: white;
+}
+
+@font-face {
+  font-family: "TT2020 Style E - Italic";
+  src: url("./fonts/TT2020StyleE-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TT2020 Style G";
+  src: url("./fonts/TT2020StyleG-Regular-ASCII.ttf") format("truetype");
+  font-style: normal;
+}
+
+.subtitle {
+  font-family: "TT2020 Style G", serif;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--base-taupe);
+}
