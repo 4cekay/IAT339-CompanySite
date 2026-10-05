@@ -10,6 +10,8 @@
   --base-taupe: #b69d95;
 
   --dark-red: #5d1010;
+  --bruise-pink: #c88590;
+
 
   --display-light-red: #693434;
   --button-dark-grey: #383838;
@@ -70,7 +72,7 @@ header {
 
 .nav-main {
   justify-content: space-between;
-
+  background-color: var(--base-red);
   border: 1px black solid;
 }
 .nav-main .nav-link {
@@ -83,7 +85,7 @@ header {
 }
 .nav-main .nav-link:hover,
 .nav-main .nav-link:focus {
-  color: var(--base-red);
+  color: var(--base-taupe);
   text-decoration: underline;
 }
 .nav-main .nav-link:visited {
@@ -246,7 +248,7 @@ p {
 /* In-Text Link */
 .list-link,
 .in-text-link {
-  color: var(--base-red);
+  color: var(--bruise-pink);
 
   transition: all 0.2s;
 }
@@ -254,7 +256,7 @@ p {
 .list-link:focus,
 .in-text-link:hover,
 .in-text-link:focus {
-  color: var(--dark-red);
+  color: var(--base-red);
 }
 
 /* Navigation Button */
