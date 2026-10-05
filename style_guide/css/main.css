@@ -5,11 +5,15 @@
 
 :root {
   --base-red: #a01d1d;
-  --dark-red: #5d1010;
   --base-white: #e0dfdf;
   --base-light-grey: #c9c9c0;
   --base-taupe: #b69d95;
+
+  --dark-red: #5d1010;
+
   --display-light-red: #693434;
+  --button-dark-grey: #383838;
+  --button-bg-hover: #efeae9dd;
 }
 
 *,
@@ -72,15 +76,25 @@ header {
 .nav-main .nav-link {
   padding: 1.5rem;
 
+  color: var(--base-white);
   text-decoration: none;
-}
 
+  transition: all 0.25s;
+}
 .nav-main .nav-link:hover,
 .nav-main .nav-link:focus {
+  color: var(--base-red);
   text-decoration: underline;
+}
+.nav-main .nav-link:visited {
+  color: var(--base-white);
 }
 
 /* Header Section */
+
+.main-title {
+  color: rgb(222, 218, 218);
+}
 
 h4 {
   margin-bottom: 0.25rem;
@@ -104,14 +118,10 @@ p {
 
   background-color: var(--dark-red);
 }
-
-#main-content > .element-section > h2 {
+.section-heading {
   margin: 1.5rem 1.5rem;
 
-  font-family: "Instrument Serif", serif;
-  font-size: 2rem;
   color: var(--base-white);
-
   background-color: var(--dark-red);
 }
 
@@ -150,12 +160,23 @@ p {
 }
 
 .element-subheading {
-  margin: 0.5rem 1rem;
+  margin: 0.25rem 1rem;
   padding: 0.5rem 0;
 
   font-size: 1.25rem;
 
   color: var(--base-light-grey);
+}
+
+.selectors-list {
+  margin: 0;
+  padding: 0 0 1rem 1rem;
+
+  color: white;
+  list-style-type: none;
+}
+.selector-item {
+  color: var(--base-white);
 }
 
 .demo-container {
@@ -222,33 +243,260 @@ p {
   INTERACTIVE ELEMENTS -------------------
 */
 
-/* Styling for the navigation button */
+/* In-Text Link */
+.list-link,
+.in-text-link {
+  color: var(--base-red);
+
+  transition: all 0.2s;
+}
+.list-link:hover,
+.list-link:focus,
+.in-text-link:hover,
+.in-text-link:focus {
+  color: var(--dark-red);
+}
+
+/* Navigation Button */
 .button-nav {
   display: inline-block;
-  padding: 0.5rem;
-  color: white;
+  padding: 1rem 2rem;
+  color: black;
 
-  background-color: rgb(50, 50, 50);
+  background-color: var(--base-taupe);
   text-decoration: none;
-  transition-property: background-color;
-  transition-duration: 0.5s;
+
+  transition: all 0.3s;
 }
 
 .button-nav:hover,
 .button-nav:focus {
-  background-color: rgb(200, 200, 200);
+  background-color: #d8c1b9;
+
+  color: var(--dark-red);
+  text-decoration: underline;
+}
+
+/* Text Input + Label */
+.input-field {
+  padding: 0.5rem;
+
+  background-color: var(--base-light-grey);
+  border: rgb(98, 97, 97) solid 0.15rem;
+  border-radius: 0.15rem;
+
+  transition: all 0.15s;
+
+  outline: none;
+}
+
+.input-field:hover,
+.input-field:focus {
+  border-color: rgb(56, 56, 56);
+  background-color: #efeae9dd;
+}
+
+/* Submit + Reset Buttons (Form) */
+.button-submit {
+  padding: 0.5rem;
+
+  border: 0.1rem solid var(--button-dark-grey);
+  border-radius: 0.15rem;
+
+  transition: all 0.2s;
+}
+.button-submit:hover,
+.button-submit:focus {
+  color: rgb(88, 165, 11);
+
+  border-color: rgb(56, 56, 56);
+  background-color: #efeae9dd;
+
+  transform: scale(0.95);
+}
+
+.button-reset {
+  padding: 0.5rem;
+
+  border: 0.1rem solid var(--button-dark-grey);
+  border-radius: 0.15rem;
+
+  transition: all 0.2s;
+}
+.button-reset:hover,
+.button-reset:focus {
+  color: rgb(169, 9, 41);
+
+  border-color: rgb(56, 56, 56);
+  background-color: #efeae9dd;
+
+  transform: scale(0.97);
+}
+
+/* Image Link */
+.image-link {
+  transition: all 0.3s;
+}
+.image-link:hover {
+  opacity: 0.75;
 }
 
 /* 
   TEXT ELEMENTS -------------------
 */
 
+h2 {
+  font-size: 2rem;
+}
+
+#sample-paragraph {
+  font-size: 1rem;
+}
+
+li {
+  padding: 0.25rem 0;
+}
+
 /* 
   COMBINED ELEMENTS -------------------
 */
+
+/* Merchandise Listing */
+.product-listing {
+  color: var(--base-light-grey);
+
+  text-decoration: none;
+}
+.product-listing:hover,
+.product-listing:focus {
+  .product-name {
+    color: #cf2242;
+  }
+}
+.product-listing:visited {
+  color: var(--base-light-grey);
+}
+
+.product-name {
+  text-decoration: underline;
+
+  transition: all 0.2s;
+}
+
+/* Tour Listing */
+
+.tour-listing {
+  text-decoration: none;
+}
 
 .tour-header-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  color: whitesmoke;
+
+  font-size: 1.25rem;
+}
+
+.tour-listing-details {
+  list-style: none;
+
+  padding-left: 0;
+  margin-top: 0;
+
+  color: var(--base-white);
+}
+.tour-listing-details:visited {
+  color: var(--base-white);
+}
+
+.tickets-link {
+  padding: 0.5rem 0.75rem;
+
+  font-size: 0.8rem;
+
+  border: rgb(98, 97, 97) solid 0.15rem;
+  border-radius: 0.15rem;
+  background-color: var(--base-light-grey);
+
+  transition: all 0.15s;
+}
+.tickets-link:hover,
+.tickets-link:focus {
+  color: rgb(126, 93, 0);
+  border-color: rgb(197, 144, 1);
+  background-color: var(--button-bg-hover);
+}
+
+/* Payment Form */
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  width: 100%;
+}
+
+#payment {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.5rem;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+
+  gap: 3.5rem;
+}
+.checkout-field {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.75rem;
+}
+
+#billing {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.5rem;
+}
+
+.name-row > .input-field {
+  width: 28.5%;
+}
+
+.address-column {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.5rem;
+}
+.address-column > .input-field {
+  width: 100%;
+}
+
+.input-label {
+  font-size: 1rem;
+}
+.input-field {
+  width: 20rem;
+
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+#button-pay {
+  width: 25%;
+
+  border-radius: 4rem;
+
+  align-self: center;
+}
+#button-pay:hover,
+#button-pay:focus {
+  border-color: rgb(88, 165, 11);
 }

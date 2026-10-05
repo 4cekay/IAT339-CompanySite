@@ -43,18 +43,18 @@
     <div id="main-content">
       <!-- INTERACTIVE ELEMENTS SECTION // -->
       <section class="element-section" id="interactive_elements">
-        <h2>Interactive Elements</h2>
+        <h2 class="section-heading">Interactive Elements</h2>
 
         <div class="elements-container">
           <section class="element">
             <h3 class="element-title">In-text Link</h3>
 
             <h4 class="element-subheading">CSS Selectors:</h4>
-            <p>
-              .list-link
-              <br />
-              .in-text-link
-            </p>
+
+            <ul class="selectors-list">
+              <li class="selector-item">.list-link</li>
+              <li class="selector-item">.in-text-link</li>
+            </ul>
 
             <!-- Reference: Lab code sample embedding for syntax -->
 
@@ -168,25 +168,28 @@
             <h3 class="element-title">Navigation Link</h3>
 
             <h4 class="element-subheading">CSS Selector:</h4>
-            <p>.button-nav</p>
+
+            <ul class="selectors-list">
+              <li class="selector-item">.button-nav</li>
+            </ul>
 
             <div class="demo-container">
               <div class="code-container">
                 <h4 class="element-subheading">Sample Code:</h4>
                 <pre
                   class="code-block"
-                ><code>&lt;a href="#latest" class="button-nav"&gt;Latest&lt;/a&gt;</code></pre>
+                ><code>&lt;a href="#page-title" class="button-nav"&gt;Home&lt;/a&gt;</code></pre>
               </div>
 
               <div class="rendered-container">
                 <h4 class="element-subheading">Rendered Element:</h4>
 
                 <div class="rendered-display">
-                  <a class="button-nav" href="#latest">Latest</a>
+                  <a class="button-nav nav-link" href="#page-title">Home</a>
                 </div>
                 <p class="rendered-subtitle">
-                  Example of a navigation bar button that would lead to a
-                  section with updates and announcements.
+                  Example of a navigation bar button that would lead back to the
+                  homepage of a website.
                 </p>
               </div>
             </div>
@@ -200,11 +203,11 @@
           <section class="element">
             <h3 class="element-title">Text Input Field with Label</h3>
             <h4 class="element-subheading">CSS Selectors:</h4>
-            <p>
-              .input-label
-              <br />
-              .input-field
-            </p>
+
+            <ul class="selectors-list">
+              <li class="selector-item">.input-label</li>
+              <li class="selector-item">.input-field</li>
+            </ul>
 
             <div class="demo-container">
               <div class="code-container">
@@ -247,11 +250,11 @@
             <h3 class="element-title">Submit/Reset Buttons</h3>
 
             <h4 class="element-subheading">CSS Selectors:</h4>
-            <p>
-              .button-submit
-              <br />
-              .button-reset
-            </p>
+
+            <ul class="selectors-list">
+              <li class="selector-item">.button-submit</li>
+              <li class="selector-item">.button-reset</li>
+            </ul>
 
             <div class="demo-container">
               <div class="code-container">
@@ -291,7 +294,11 @@
             <h3 class="element-title">Radio Button with Label</h3>
 
             <h4 class="element-subheading">CSS Selectors:</h4>
-            <p>.radio-label .radio-button</p>
+
+            <ul class="selectors-list">
+              <li class="selector-item">.radio-label</li>
+              <li class="selector-item">.radio-button</li>
+            </ul>
 
             <div class="demo-container">
               <div class="code-container">
@@ -411,7 +418,10 @@
             <h3 class="element-title">Image as a Link</h3>
 
             <h4 class="element-subheading">CSS Selector:</h4>
-            <p>.image-link</p>
+
+            <ul class="selectors-list">
+              <li class="selector-item">.image-link</li>
+            </ul>
 
             <div class="demo-container">
               <div class="code-container">
@@ -455,96 +465,138 @@
 
       <!-- TEXT ELEMENTS SECTION // -->
       <section class="element-section" id="text_elements">
-        <h2>Text Elements</h2>
+        <h2 class="section-heading">Text Elements</h2>
 
         <div class="elements-container">
           <section class="element">
-            <h3>Headings</h3>
+            <h3 class="element-title">Headings</h3>
 
-            <!-- No ref -->
+            <h4 class="element-subheading">CSS Selectors:</h4>
 
-            <h4>Sample code:</h4>
-            <code
-              >&lt;h1&gt;Heading 1 - Main Titles: Xynth3tic&lt;/h1&gt;<br />
-              &lt;h2&gt;Heading 2 - Section Titles: About Us&lt;/h2&gt;<br />
-              &lt;h3&gt;Heading 3 - Subtitle and Navagation Text:
-              BIOGRAPHY&lt;/h3&gt;<br />
-              &lt;h4&gt;Heading 4 - Main Title Descriptions and Subtext: Like
-              driving a beat-up convertible down a coastal highway at sunset
-              with no brakes and a trunk full of snacks.&lt;/h4&gt;</code
-            >
+            <ul class="selectors-list">
+              <li class="selector-item">h1</li>
+              <li class="selector-item">.main-title</li>
+              <li class="selector-item">h2</li>
+              <li class="selector-item">.section-title</li>
+              <li class="selector-item">h3</li>
+              <li class="selector-item">.subtitle</li>
+              <li class="selector-item">h4</li>
+              <li class="selector-item">.description</li>
+            </ul>
 
-            <h4>Rendered element:</h4>
-            <h1>Heading 1 - Main Titles: Xynth3tic</h1>
-            <h2>Heading 2 - Section Titles: About Us</h2>
-            <h3>Heading 3 - Subtitle and Navagation Text: BIOGRAPHY</h3>
-            <h4>
-              Heading 4 - Main Title Descriptions and Subtext: Like driving a
-              beat-up convertible down a coastal highway at sunset with no
-              brakes and a trunk full of snacks.
-            </h4>
+            <div class="demo-container">
+              <div class="code-container">
+                <h4 class="element-subheading">Sample code:</h4>
+                <pre class="code-block"><code
+              >&lt;h1&gt;Heading 1 - Main Titles: Xynth3tic&lt;/h1&gt;
+&lt;h2&gt;Heading 2 - Section Titles: About Us&lt;/h2&gt;
+&lt;h3&gt;Heading 3 - Subtitle and Navagation Text:BIOGRAPHY&lt;/h3&gt;
+&lt;h4&gt;Heading 4 - Main Title Descriptions and Subtext: Like driving a beat-up convertible 
+down a coastal highway at sunset with no brakes and a trunk full of snacks.&lt;/h4&gt;</code
+            ></pre>
+              </div>
+              <div class="rendered-container">
+                <h4 class="element-subheading">Rendered element:</h4>
+                <div id="sample-headings" class="rendered-display">
+                  <h1>Heading 1 - Main Titles: Xynth3tic</h1>
+                  <h2>Heading 2 - Section Titles: About Us</h2>
+                  <h3>Heading 3 - Subtitle and Navagation Text: BIOGRAPHY</h3>
+                  <h4>
+                    Heading 4 - Main Title Descriptions and Subtext: Like
+                    driving a beat-up convertible down a coastal highway at
+                    sunset with no brakes and a trunk full of snacks.
+                  </h4>
+                </div>
+              </div>
+            </div>
           </section>
 
           <section class="element">
-            <h3>Paragraphs</h3>
+            <h3 class="element-title">Paragraphs</h3>
 
-            <!-- No ref -->
+            <h4 class="element-subheading">CSS Selector:</h4>
 
-            <h4>Sample code:</h4>
-            <code
-              >&lt;p&gt;Main body text: lorem ipsum dolor sit amet consectetur
-              adipiscing elit anim minim quas elit accusamus qui pariatur nihil
-              excepteur lorem fuga qui qui enim lorem occaecat culpa iusto
-              laborum ex ea consequat tempore harum molestias facere laboris
-              cillum enim omnis fugiat velit omnis odio tempor assumenda nisi
-              voluptate ut in optio quis&lt;/p&gt;</code
-            >
+            <ul class="selectors-list">
+              <li class="selector-item">p</li>
+            </ul>
 
-            <h4>Rendered element:</h4>
-            <p>
-              Main body text: lorem ipsum dolor sit amet consectetur adipiscing
-              elit anim minim quas elit accusamus qui pariatur nihil excepteur
-              lorem fuga qui qui enim lorem occaecat culpa iusto laborum ex ea
-              consequat tempore harum molestias facere laboris cillum enim omnis
-              fugiat velit omnis odio tempor assumenda nisi voluptate ut in
-              optio quis
-            </p>
+            <div class="demo-container">
+              <div class="code-container">
+                <h4 class="element-subheading">Sample code:</h4>
+                <pre class="code-block"><code
+              >&lt;p&gt;Main Body Text: lorem ipsum dolor sit amet consectetur
+adipiscing elit anim minim quas elit accusamus qui pariatur nihil
+excepteur lorem fuga qui qui enim lorem occaecat culpa iusto
+laborum ex ea consequat tempore harum molestias facere laboris
+cillum enim omnis fugiat velit omnis odio tempor assumenda nisi
+voluptate ut in optio quis&lt;/p&gt;</code
+            ></pre>
+              </div>
+              <div class="rendered-container">
+                <h4 class="element-subheading">Rendered element:</h4>
+
+                <div class="rendered-display">
+                  <p id="sample-paragraph">
+                    Main Body Text: lorem ipsum dolor sit amet consectetur
+                    adipiscing elit anim minim quas elit accusamus qui pariatur
+                    nihil excepteur lorem fuga qui qui enim lorem occaecat culpa
+                    iusto laborum ex ea consequat tempore harum molestias facere
+                    laboris cillum enim omnis fugiat velit omnis odio tempor
+                    assumenda nisi voluptate ut in optio quis
+                  </p>
+                </div>
+              </div>
+            </div>
           </section>
 
           <section class="element">
-            <h3>Numbered Lists</h3>
+            <h3 class="element-title">Numbered Lists</h3>
 
-            <h4>Sample code:</h4>
-            <code
-              >&lt;ol&gt;<br />
-              &lt;li&gt;Album Name & Date: Album Title Track&lt;/li&gt;<br />
-              &lt;li&gt;Album Name & Date: Album Title Track&lt;/li&gt;<br />
-              &lt;li&gt;Album Name & Date: Album Title Track&lt;/li&gt;<br />
-              &lt;/ol&gt;</code
-            >
+            <h4 class="element-subheading">CSS Selectors:</h4>
 
-            <ol>
-              <li>Album Name & Date: Album Title Track</li>
-              <li>Album Name & Date: Album Title Track</li>
-              <li>Album Name & Date: Album Title Track</li>
-            </ol>
+            <ul class="selectors-list">
+              <li class="selector-item">ol</li>
+              <li class="selector-item">li</li>
+            </ul>
+
+            <div class="demo-container">
+              <div class="code-container">
+                <h4 class="element-subheading">Sample code:</h4>
+                <pre class="code-block"><code
+              >&lt;ol&gt;
+  &lt;li&gt;Letters Pt.1: Liar Liar&lt;/li&gt;
+  &lt;li&gt;Triadic Interlude: Blackbox&lt;/li&gt;
+  &lt;li&gt;Letters Pt.2 : Faceless&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+              </div>
+              <div class="rendered-container">
+                <h3 class="element-subheading">Rendered Elements</h3>
+                <div class="rendered-display">
+                  <ol>
+                    <li>Letters Pt. 1: Liar Liar</li>
+                    <li>Triadic Interlude: Blackbox</li>
+                    <li>Letters Pt. 2: Faceless</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
           </section>
         </div>
       </section>
 
       <!-- COMBINED ELEMENTS SECTION // -->
       <section class="element-section" id="combined_elements">
-        <h2>Combined Elements</h2>
+        <h2 class="section-heading">Combined Elements</h2>
 
         <div class="elements-container">
           <section class="element">
             <h3 class="element-title">Main Navigation</h3>
             <h4 class="element-subheading">CSS Selectors:</h4>
-            <p>
-              #main-nav
-              <br />
-              .button-nav
-            </p>
+
+            <ul class="selectors-list">
+              <li class="selector-item">#main-nav</li>
+              <li class="selector-item">.button-nav</li>
+            </ul>
 
             <div class="demo-container">
               <div class="code-container">
@@ -582,15 +634,13 @@
             <h3 class="element-title">Merchandise Listings</h3>
 
             <h4 class="element-subheading">CSS Selectors:</h4>
-            <p>
-              .product-listing
-              <br />
-              .product-name
-              <br />
-              .product-image
-              <br />
-              .price
-            </p>
+
+            <ul class="selectors-list">
+              <li class="selector-item">.product-listing</li>
+              <li class="selector-item">.product-name</li>
+              <li class="selector-item">.product-image</li>
+              <li class="selector-item">.price</li>
+            </ul>
 
             <div class="demo-container">
               <div class="code-container">
@@ -633,17 +683,14 @@
             <h3 class="element-title">Tour Listings</h3>
 
             <h4 class="element-subheading">CSS Selectors</h4>
-            <p>
-              .tour-listing
-              <br />
-              .tour-location
-              <br />
-              .tour-listing-details
-              <br />
-              .tour-details-item
-              <br />
-              .tickets-link
-            </p>
+
+            <ul class="selectors-list">
+              <li class="selector-item">.tour-listing</li>
+              <li class="selector-item">.tour-location</li>
+              <li class="selector-item">.tour-listing-details</li>
+              <li class="selector-item">.tour-details-item</li>
+              <li class="selector-item">.tickets-link</li>
+            </ul>
 
             <div class="demo-container">
               <div class="code-container">
@@ -668,12 +715,12 @@
                 <div class="rendered-display">
                   <a href="https://www.ticketmaster.ca/" class="tour-listing">
                     <div class="tour-header-row">
-                      <p class="tour-location">City, Province</p>
-                      <p class="tour-date">Date</p>
+                      <p class="tour-location">Vancouver, BC</p>
+                      <p class="tour-date">April 1, 2027</p>
                     </div>
                     <ul class="tour-listing-details">
-                      <li class="tour-details-item">Venue Name</li>
-                      <li class="details-item">Time</li>
+                      <li class="tour-details-item">Vogue Theatre</li>
+                      <li class="tour-details-item">7:00 P.M.</li>
                     </ul>
                     <button class="tickets-link">Get Tickets</button>
                   </a>
@@ -690,27 +737,19 @@
           <section id="payment-form" class="element">
             <h3 class="element-title">Payment Form</h3>
             <h4 class="element-subheading">CSS Selectors:</h4>
-            <p>
-              #payment
-              <br />
-              #billing
-              <br />
-              .checkout-field
-              <br />
-              .radio-label
-              <br />
-              .radio-button
-              <br />
-              .input-label
-              <br />
-              .input-field
-              <br />
-              .name-row
-              <br />
-              .address-row
-              <br />
-              .button-submit
-            </p>
+
+            <ul class="selectors-list">
+              <li class="selector-item">#payment</li>
+              <li class="selector-item">#billing</li>
+              <li class="selector-item">.checkout-field</li>
+              <li class="selector-item">.radio-label</li>
+              <li class="selector-item">.radio-button</li>
+              <li class="selector-item">.input-label</li>
+              <li class="selector-item">.input-field</li>
+              <li class="selector-item">.name-row</li>
+              <li class="selector-item">.address-row</li>
+              <li class="selector-item">.button-submit</li>
+            </ul>
 
             <div class="demo-container">
               <div class="code-container">
@@ -845,145 +884,156 @@
               <div class="rendered-container">
                 <h4 class="element-subheading">Rendered Elements:</h4>
                 <div class="rendered-display">
-                  <form>
-                    <section id="payment">
-                      <div class="checkout-field">
-                        <h5>Payment Method:</h5>
-                        <label class="radio-label">
+                  <form class="payment-form">
+                    <div class="input-row">
+                      <section id="payment">
+                        <div class="checkout-field">
+                          <h5>Payment Method:</h5>
+                          <label class="radio-label">
+                            <input
+                              class="radio-button"
+                              type="radio"
+                              name="payment-method"
+                              value="Credit/Debit"
+                              checked
+                            />
+                            Credit/Debit
+                          </label>
+
+                          <label class="radio-label">
+                            <input
+                              class="radio-button"
+                              type="radio"
+                              name="payment-method"
+                              value="PayPal"
+                            />
+                            PayPal
+                          </label>
+
+                          <label>
+                            <input
+                              class="radio-button"
+                              type="radio"
+                              name="payment-method"
+                              value="Gift Card"
+                            />
+                            Gift Card
+                          </label>
+                        </div>
+
+                        <div class="checkout-field">
+                          <label class="input-label" for="card-number"
+                            >Card Number:
+                          </label>
                           <input
-                            class="radio-button"
-                            type="radio"
-                            name="payment-method"
-                            value="Credit/Debit"
-                            checked
+                            id="card-number"
+                            class="input-field"
+                            type="text"
+                            placeholder="1234-5678-9101-1213"
                           />
-                          Credit/Debit
-                        </label>
 
-                        <label class="radio-label">
+                          <label class="input-label" for="card-exp"
+                            >Expiry Date:
+                          </label>
                           <input
-                            class="radio-button"
-                            type="radio"
-                            name="payment-method"
-                            value="PayPal"
+                            id="card-exp"
+                            class="input-field"
+                            type="text"
+                            placeholder="MM/YY"
                           />
-                          PayPal
-                        </label>
 
-                        <label>
+                          <label class="input-label" for="card-cvc"
+                            >Security Code:
+                          </label>
                           <input
-                            class="radio-button"
-                            type="radio"
-                            name="payment-method"
-                            value="Gift Card"
+                            id="card-cvc"
+                            class="input-field"
+                            type="text"
+                            placeholder="CVC"
                           />
-                          Gift Card
-                        </label>
-                      </div>
+                        </div>
+                      </section>
 
-                      <div class="checkout-field">
-                        <label class="input-label" for="card-number"
-                          >Card Number:
-                        </label>
-                        <input
-                          id="card-number"
-                          class="input-field"
-                          type="text"
-                          placeholder="1234-5678-9101-1213"
-                        />
+                      <section id="billing">
+                        <h5>Billing Address:</h5>
 
-                        <label class="input-label" for="card-exp"
-                          >Expiry Date:
-                        </label>
-                        <input
-                          id="card-exp"
-                          class="input-field"
-                          type="text"
-                          placeholder="MM/YY"
-                        />
+                        <div class="name-row">
+                          <label class="input-label" for="first-name"
+                            >First Name:
+                          </label>
+                          <input
+                            id="first-name"
+                            class="input-field"
+                            type="text"
+                            placeholder="Jane"
+                          />
+                          <label class="input-label" for="last-name"
+                            >Last Name:
+                          </label>
+                          <input
+                            id="last-name"
+                            class="input-field"
+                            type="text"
+                            placeholder="Doe"
+                          />
+                        </div>
 
-                        <label class="input-label" for="card-cvc"
-                          >Security Code:
-                        </label>
-                        <input
-                          id="card-cvc"
-                          class="input-field"
-                          type="text"
-                          placeholder="CVC"
-                        />
-                      </div>
-                    </section>
+                        <div class="address-column">
+                          <label class="input-label" for="ad-line-1"
+                            >Address Line 1:
+                          </label>
+                          <input
+                            id="ad-line-1"
+                            class="input-field"
+                            type="text"
+                            placeholder="House no. and street"
+                          />
+                          <label class="input-label" for="ad-line-2"
+                            >Address Line 2 (Optional):
+                          </label>
+                          <input
+                            id="ad-line-2"
+                            class="input-field"
+                            type="text"
+                            placeholder="Apartment, unit, suite, etc."
+                          />
+                        </div>
 
-                    <section id="billing">
-                      <h5>Billing Address:</h5>
+                        <div class="address-column">
+                          <label class="input-label" for="city"
+                            >Town/City:</label
+                          >
+                          <input id="city" class="input-field" type="text" />
+                          <label class="input-label" for="province"
+                            >Province/State:
+                          </label>
+                          <input
+                            id="province"
+                            class="input-field"
+                            type="text"
+                          />
+                          <label class="input-label" for="zip"
+                            >Postal Code:
+                          </label>
+                          <input id="zip" class="input-field" type="text" />
+                        </div>
 
-                      <div class="name-row">
-                        <label class="input-label" for="first-name"
-                          >First Name:
-                        </label>
-                        <input
-                          id="first-name"
-                          class="input-field"
-                          type="text"
-                          placeholder="Jane"
-                        />
-                        <label class="input-label" for="last-name"
-                          >Last Name:
-                        </label>
-                        <input
-                          id="last-name"
-                          class="input-field"
-                          type="text"
-                          placeholder="Doe"
-                        />
-                      </div>
-
-                      <div class="address-row">
-                        <label class="input-label" for="ad-line-1"
-                          >Address Line 1:
-                        </label>
-                        <input
-                          id="ad-line-1"
-                          class="input-field"
-                          type="text"
-                          placeholder="House no. and street"
-                        />
-                        <label class="input-label" for="ad-line-2"
-                          >Address Line 2 (Optional):
-                        </label>
-                        <input
-                          id="ad-line-2"
-                          class="input-field"
-                          type="text"
-                          placeholder="Apartment, unit, suite, etc."
-                        />
-                      </div>
-
-                      <div class="address-row">
-                        <label class="input-label" for="city">Town/City:</label>
-                        <input id="city" class="input-field" type="text" />
-                        <label class="input-label" for="province"
-                          >Province/State:
-                        </label>
-                        <input id="province" class="input-field" type="text" />
-                        <label class="input-label" for="zip"
-                          >Postal Code:
-                        </label>
-                        <input id="zip" class="input-field" type="text" />
-                      </div>
-
-                      <label class="input-label" for="email"
-                        >Email Address:
-                      </label>
-                      <input
-                        id="email"
-                        class="input-field"
-                        type="text"
-                        placeholder="e.g. you@email.com"
-                      />
-                    </section>
+                        <div class="address-column">
+                          <label class="input-label" for="email"
+                            >Email Address:
+                          </label>
+                          <input
+                            id="email"
+                            class="input-field"
+                            type="text"
+                            placeholder="e.g. you@email.com"
+                          />
+                        </div>
+                      </section>
+                    </div>
 
                     <input
+                      id="button-pay"
                       class="button-submit"
                       type="submit"
                       value="Pay Now"
@@ -998,17 +1048,14 @@
             <h3 class="element-title">Cart</h3>
 
             <h4 class="element-subheading">CSS Selectors:</h4>
-            <p>
-              .checkout-cart
-              <br />
-              .cart-item
-              <br />
-              .cart-item-price
-              <br />
-              .subtotal-box
-              <br />
-              .button-checkout
-            </p>
+
+            <ul class="selectors-list">
+              <li class="selector-item">.checkout-cart</li>
+              <li class="selector-item">.cart-item</li>
+              <li class="selector-item">.cart-item-price</li>
+              <li class="selector-item">.subtotal-box</li>
+              <li class="selector-item">.button-checkout</li>
+            </ul>
 
             <div class="demo-container">
               <div class="code-container">
@@ -1074,7 +1121,7 @@
                   <p>$55.98 CAD</p>
 
                   <a href="checkout.html" class="button-checkout"
-                    ><button>Checkout</button></a
+                    ><button class="tickets-link">Checkout</button></a
                   >
                 </div>
                 <p class="rendered-subtitle">
@@ -1088,47 +1135,49 @@
       </section>
       <!-- // COMBINED ELEMENTS SECTION -->
 
-      <section id="citations">
-        <h2>Citations</h2>
+      <section id="citations" class="element-section">
+        <h2 class="section-heading">Citations</h2>
 
-        <ul>
-          <li>
-            Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>.
-            Retrieved from
-            <a
-              href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans"
-              >https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a
-            >
-          </li>
-          <li>
-            jmort125. Artist. 2024. <strong>177 album covers [Images]</strong>.
-            Retrieved from
-            <a
-              href="https://www.reddit.com/r/Yedits/comments/1cmlyi6/177_album_covers_free_to_use_for_comps_or_any/"
-              >https://www.reddit.com/r/Yedits/comments/1cmlyi6/177_album_covers_free_to_use_for_comps_or_any/</a
-            >.
-          </li>
-          <li>
-            Sarddhaben. (Contributor). (N.D.).
-            <strong>Red CD Case [Image]</strong>. Retrieved from
-            <a
-              href="https://www.cleanpng.com/png-cd-cd-case-red-black-silver-red-cd-case-with-silve-m7ftkb/download-png.html"
-              >https://www.cleanpng.com/png-cd-cd-case-red-black-silver-red-cd-case-with-silve-m7ftkb/download-png.html</a
-            >.
-          </li>
-          <li>
-            Inncent. (Contributor). (N.D.).
-            <strong>Golden Decorative CD Case [Image]</strong>. Retrieved from
-            <a
-              href="https://www.cleanpng.com/png-u0627u0628u0631-dey-drug-rehabilitation-addiction-xr9l46/"
-              >https://www.cleanpng.com/png-u0627u0628u0631-dey-drug-rehabilitation-addiction-xr9l46/</a
-            >.
-          </li>
-          <li>
-            Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved
-            from <a href="">URL</a>.
-          </li>
-        </ul>
+        <div class="elements-container">
+          <ul>
+            <li>
+              Matteson, Steve. Designer. 2011.
+              <strong>Open Sans [Font]</strong>. Retrieved from
+              <a
+                href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans"
+                >https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a
+              >
+            </li>
+            <li>
+              jmort125. Artist. 2024.
+              <strong>177 album covers [Images]</strong>. Retrieved from
+              <a
+                href="https://www.reddit.com/r/Yedits/comments/1cmlyi6/177_album_covers_free_to_use_for_comps_or_any/"
+                >https://www.reddit.com/r/Yedits/comments/1cmlyi6/177_album_covers_free_to_use_for_comps_or_any/</a
+              >.
+            </li>
+            <li>
+              Sarddhaben. (Contributor). (N.D.).
+              <strong>Red CD Case [Image]</strong>. Retrieved from
+              <a
+                href="https://www.cleanpng.com/png-cd-cd-case-red-black-silver-red-cd-case-with-silve-m7ftkb/download-png.html"
+                >https://www.cleanpng.com/png-cd-cd-case-red-black-silver-red-cd-case-with-silve-m7ftkb/download-png.html</a
+              >.
+            </li>
+            <li>
+              Inncent. (Contributor). (N.D.).
+              <strong>Golden Decorative CD Case [Image]</strong>. Retrieved from
+              <a
+                href="https://www.cleanpng.com/png-u0627u0628u0631-dey-drug-rehabilitation-addiction-xr9l46/"
+                >https://www.cleanpng.com/png-u0627u0628u0631-dey-drug-rehabilitation-addiction-xr9l46/</a
+              >.
+            </li>
+            <li>
+              Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved
+              from <a href="">URL</a>.
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
 

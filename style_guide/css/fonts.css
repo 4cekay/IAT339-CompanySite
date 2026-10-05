@@ -22,24 +22,54 @@
   font-style: normal;
 }
 
+h1 {
+  font-family: "Instrument Serif", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Instrument Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.element-subheading {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+#citations {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
 @font-face {
   font-family: "Instrument Serif - Italic";
   src: url("./fonts/InstrumentSerif-Italic.ttf") format("truetype");
   font-style: italic;
 }
 
-.main-title {
-  font-family: "Instrument Serif", serif;
-  font-weight: 600;
-  font-style: normal;
-
-  color: rgb(222, 218, 218);
-}
-
-.body-title {
-  font-family: "Instrument Serif", serif;
-  font-weight: 300;
-  font-style: normal;
+.rendered-subtitle {
+  font-family: "Instrument Serif - Italic", serif;
+  font-weight: 100;
 }
 
 @font-face {
@@ -48,11 +78,16 @@
   font-style: normal;
 }
 
-.nav-link {
+p {
   font-family: "TT2020 Style E", serif;
-  font-weight: 200;
+  font-weight: 100;
   font-style: normal;
-  color: white;
+}
+
+.selectors-list {
+  font-family: "TT2020 Style E", serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 .rendered-display {
@@ -61,7 +96,18 @@
   font-style: normal;
 }
 
-.rendered-subtitle {
+.input-field {
+  font-family: "TT2020 Style E", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.button-submit {
+  font-family: "TT2020 Style E", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.button-reset {
   font-family: "TT2020 Style E", serif;
   font-weight: 100;
   font-style: normal;
@@ -79,6 +125,12 @@
   font-style: normal;
 }
 
+h4 {
+  font-family: "TT2020 Style G", serif;
+  font-weight: 150;
+  font-style: normal;
+}
+
 .subtitle {
   font-family: "TT2020 Style G", serif;
   font-weight: 200;
@@ -86,14 +138,14 @@
   text-transform: uppercase;
 }
 
-.element-title {
-  font-family: "Instrument Serif", serif;
-  font-weight: 200;
+.product-name {
+  font-family: "TT2020 Style G", serif;
+  font-weight: 150;
   font-style: normal;
   text-transform: uppercase;
 }
 
-.element-subheading {
+.tickets-link {
   font-family: "TT2020 Style G", serif;
   font-weight: 200;
   font-style: normal;
