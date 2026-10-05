@@ -47,9 +47,9 @@
 
         <div class="elements-container">
           <section class="element">
-            <h3>In-text link</h3>
+            <h3 class="element-title">In-text Link</h3>
 
-            <h4>CSS Selectors:</h4>
+            <h4 class="element-subheading">CSS Selectors:</h4>
             <p>
               .list-link
               <br />
@@ -58,12 +58,14 @@
 
             <!-- Reference: Lab code sample embedding for syntax -->
 
-            <h4>Sample Code:</h4>
-            <!-- List example code snippet  -->
-            <!-- Reference for <pre> formatting for longer code snippet display: https://stackoverflow.com/questions/21646408/how-do-i-use-indentation-in-a-code-tag -->
+            <div class="demo-container">
+              <div class="code-container">
+                <h4 class="element-subheading">Sample Code:</h4>
+                <!-- List example code snippet  -->
+                <!-- Reference for <pre> formatting for longer code snippet display: https://stackoverflow.com/questions/21646408/how-do-i-use-indentation-in-a-code-tag -->
 
-            <pre class="code-block">
-          <code>&lt;ul&gt;
+                <pre class="code-block">
+<code>&lt;ul&gt;
   &lt;li&gt;
     &lt;a&gt;
       class="list-link"
@@ -84,87 +86,110 @@
       href="#member-c-profile"
     &lt;/a&gt;: keyboardist, rhythm guitarist, and lyricist
   &lt;/li&gt;
-&lt;/ul&gt;
-          </code>
-        </pre>
+&lt;/ul&gt;</code></pre>
+              </div>
 
-            <!--  Paragraph example code snippet  -->
-            <pre class="code-block">
-          <code>&lt;p&gt;
+              <div class="rendered-container">
+                <h4 class="element-subheading">Rendered Element:</h4>
+
+                <!-- List elements text link  -->
+                <div class="rendered-display">
+                  <p>
+                    Xynth3tic is a gothic rock musical group consisting of 3
+                    members:
+                  </p>
+                  <ul>
+                    <li>
+                      <a class="list-link" href="#member-a-profile">
+                        Xynth3tic</a
+                      >: leader, drummer, vocalist, and composer, producer, and
+                      lyricist
+                    </li>
+                    <li>
+                      <a class="list-link" href="#member-b-profile"> 4cekay</a>:
+                      lead guitarist, bassist, vocalist, and lyricist
+                    </li>
+                    <li>
+                      <a class="list-link" href="#member-c-profile"> Ren1to</a>:
+                      keyboardist, rhythm guitarist, and lyricist
+                    </li>
+                  </ul>
+                </div>
+
+                <p class="rendered-subtitle">
+                  Within a list of artist descriptions, leading to individual
+                  profile sections on a band bios page.
+                </p>
+              </div>
+            </div>
+
+            <div class="demo-container">
+              <div class="code-container">
+                <h4 class="element-subheading">Sample Code:</h4>
+                <!--  Paragraph example code snippet  -->
+                <pre class="code-block"><code>&lt;p&gt;
   The music video for 
   &lt;a
     class="in-text-link"
     href="https://www.youtube.com/"
     target="_blank"
-    &gt;[LEAD SINGLE]&lt;/a
+    &gt;Faceless&lt;/a
   &gt;
-  is finally here! This has been our favourite project to date, and we hope you love it as much as we loved making it!
-&lt;/p&gt;
-</code>
-        </pre>
+  is finally here! As always, thanks for being here. I hope you love it!!
+&lt;/p&gt;</code></pre>
+              </div>
 
-            <h4>Rendered Elements:</h4>
+              <div class="rendered-container">
+                <h4 class="element-subheading">Rendered Element:</h4>
+                <div class="rendered-display">
+                  <!-- In-paragraph text link  -->
 
-            <!-- List elements text link  -->
-            <h5>
-              Within a list of artist descriptions, leading to individual
-              profile sections:
-            </h5>
-            <p>
-              [ROCK BAND NAME] is a gothic rock musical group consisting of 3
-              members:
-            </p>
-            <ul>
-              <li>
-                <a class="list-link" href="#member-a-profile"> Member A</a>:
-                leader, drummer, vocalist, and composer, producer, and lyricist
-              </li>
-              <li>
-                <a class="list-link" href="#member-b-profile"> Member B</a>:
-                lead guitarist, bassist, vocalist, and lyricist
-              </li>
-              <li>
-                <a class="list-link" href="#member-c-profile"> Member C</a>:
-                keyboardist, rhythm guitarist, and lyricist
-              </li>
-            </ul>
-
-            <!-- In-paragraph text link  -->
-            <h5>
-              Within text on a homepage, leading to an external site (e.g.
-              YouTube)
-            </h5>
-
-            <p>
-              The music video for
-              <a
-                class="in-text-link"
-                href="https://www.youtube.com/"
-                target="_blank"
-                >[LEAD SINGLE]</a
-              >
-              is finally here! This has been our favourite project to date, and
-              we hope you love it as much as we loved making it!
-            </p>
+                  <p>
+                    The music video for
+                    <a
+                      class="in-text-link"
+                      href="https://www.youtube.com/"
+                      target="_blank"
+                      >Faceless</a
+                    >
+                    is finally here! As always, thanks for being here. I hope
+                    you love it!!
+                  </p>
+                </div>
+                <p class="rendered-subtitle">
+                  Within text on a homepage, leading to an external site (e.g.
+                  YouTube)
+                </p>
+              </div>
+            </div>
           </section>
 
           <section class="element">
-            <h3>Navigation Link</h3>
+            <h3 class="element-title">Navigation Link</h3>
 
-            <h4>CSS Selector:</h4>
+            <h4 class="element-subheading">CSS Selector:</h4>
             <p>.button-nav</p>
 
-            <h4>Sample Code:</h4>
-            <code
-              >&lt;a href="#latest" class="button-nav"&gt;Latest&lt;/a&gt;</code
-            >
+            <div class="demo-container">
+              <div class="code-container">
+                <h4 class="element-subheading">Sample Code:</h4>
+                <pre
+                  class="code-block"
+                ><code>&lt;a href="#latest" class="button-nav"&gt;Latest&lt;/a&gt;</code></pre>
+              </div>
 
-            <h4>Rendered Element:</h4>
-            <p>
-              Example of a navigation bar button that would lead to a section
-              with updates and announcements.
-            </p>
-            <a class="button-nav" href="#latest">Latest</a>
+              <div class="rendered-container">
+                <h4 class="element-subheading">Rendered Element:</h4>
+
+                <div class="rendered-display">
+                  <a class="button-nav" href="#latest">Latest</a>
+                </div>
+                <p class="rendered-subtitle">
+                  Example of a navigation bar button that would lead to a
+                  section with updates and announcements.
+                </p>
+              </div>
+            </div>
           </section>
 
           <!-- Default Button styling section -->
@@ -173,86 +198,106 @@
        https://www.w3schools.com/tags/att_input_type_reset.asp-->
 
           <section class="element">
-            <h3>Text Input Field with Label</h3>
-            <h4>CSS Selectors:</h4>
+            <h3 class="element-title">Text Input Field with Label</h3>
+            <h4 class="element-subheading">CSS Selectors:</h4>
             <p>
               .input-label
               <br />
               .input-field
             </p>
-            <h4>Sample Code:</h4>
-            <code>
-              &lt;label class="input-label" for="text-input"&gt;Email Address:
-              &lt;label&gt;
-              <br />
-              &lt;input id="text-input" class="input-field" type="text"
-              placeholder="e.g. you@email.com"&gt;
-            </code>
 
-            <h4>Rendered Element:</h4>
-            <p>
-              Example of a text input field with a label on a newsletter
-              subscription form:
-            </p>
+            <div class="demo-container">
+              <div class="code-container">
+                <h4 class="element-subheading">Sample Code:</h4>
+                <pre
+                  class="code-block"
+                ><code>&lt;label class="input-label" for="text-input"&gt;Email Address:&lt;label&gt;
 
-            <p>
-              Enter your email address below to subscribe to our newsletter and
-              receive updates on new releases, tour dates, and exclusive
-              content!
-            </p>
+&lt;input 
+  id="text-input" 
+  class="input-field" 
+  type="text"
+  placeholder="e.g. you@email.com"
+/&gt;</code></pre>
+              </div>
 
-            <label class="input-label" for="text-input">Email Address: </label>
-            <input
-              id="text-input"
-              class="input-field"
-              type="text"
-              placeholder="e.g. you@email.com"
-            />
+              <div class="rendered-container">
+                <h4 class="element-subheading">Rendered Element:</h4>
+                <div class="rendered-display">
+                  <label class="input-label" for="text-input"
+                    >Email Address:
+                  </label>
+                  <input
+                    id="text-input"
+                    class="input-field"
+                    type="text"
+                    placeholder="e.g. you@email.com"
+                  />
+                </div>
+
+                <p class="rendered-subtitle">
+                  Example of a text input field with a label on a newsletter
+                  subscription form:
+                </p>
+              </div>
+            </div>
           </section>
 
           <section class="element">
-            <h3>Submit/Reset Buttons</h3>
+            <h3 class="element-title">Submit/Reset Buttons</h3>
 
-            <h4>CSS Selectors:</h4>
+            <h4 class="element-subheading">CSS Selectors:</h4>
             <p>
               .button-submit
               <br />
               .button-reset
             </p>
 
-            <h4>Sample Code:</h4>
+            <div class="demo-container">
+              <div class="code-container">
+                <h4 class="element-subheading">Sample Code:</h4>
 
-            <code>
-              &lt;input class="button-submit" type="submit" value="Submit"&gt;
-              <br />
-              &lt;input class="button-reset" type="reset" value="Reset All
-              Fields"&gt;
-            </code>
+                <pre
+                  class="code-block"
+                ><code>&lt;input class="button-submit" type="submit" value="Submit"&gt;
+              
+&lt;input 
+  class="button-reset" 
+  type="reset" 
+  value="Reset AllFields"
+/&gt;</code></pre>
+              </div>
 
-            <h4>Rendered Element:</h4>
+              <div class="rendered-container">
+                <h4 class="element-subheading">Rendered Element:</h4>
+                <div class="rendered-display">
+                  <input class="button-submit" type="submit" value="Submit" />
+                  <input
+                    class="button-reset"
+                    type="reset"
+                    value="Reset All Fields"
+                  />
+                </div>
 
-            <p>
-              Example of submit and reset buttons on fanclub/tour presale signup
-              forms.
-            </p>
-
-            <input class="button-submit" type="submit" value="Submit" />
-            <input class="button-reset" type="reset" value="Reset All Fields" />
+                <p class="rendered-subtitle">
+                  Example of submit and reset buttons on fanclub/tour presale
+                  signup forms.
+                </p>
+              </div>
+            </div>
           </section>
 
           <section class="element">
-            <h3>Radio Button with Label</h3>
+            <h3 class="element-title">Radio Button with Label</h3>
 
-            <h4>CSS Selectors:</h4>
-            <p>
-              .radio-label
-              <br />
-              .radio-button
-            </p>
+            <h4 class="element-subheading">CSS Selectors:</h4>
+            <p>.radio-label .radio-button</p>
 
-            <h4>Sample Code:</h4>
+            <div class="demo-container">
+              <div class="code-container">
+                <h4 class="element-subheading">Sample Code:</h4>
 
-            <pre><code>&lt;label class="radio-label"&gt; 
+                <pre class="code-block"><code>&lt;label class="radio-label"&gt; 
   &lt;input 
     class="radio-button"
     type="radio" 
@@ -273,122 +318,134 @@
   /&gt; 
   PayPal
 &lt;/label&gt;</code></pre>
+              </div>
 
-            <h4>Rendered Elements:</h4>
-            <p>
-              Example radio buttons and their labels used in a checkout form for
-              selecting payment and shipping methods when buying official
-              merchandise.
-            </p>
+              <div class="rendered-container">
+                <h4 class="element-subheading">Rendered Elements:</h4>
 
-            <div>
-              <h5>Payment Method:</h5>
-              <label class="radio-label">
-                <input
-                  class="radio-button"
-                  type="radio"
-                  name="payment-method"
-                  value="Credit/Debit"
-                  checked
-                />
-                Credit/Debit
-              </label>
-              <label class="radio-label">
-                <input
-                  class="radio-button"
-                  type="radio"
-                  name="payment-method"
-                  value="PayPal"
-                />
-                PayPal
-              </label>
-              <label>
-                <input
-                  class="radio-button"
-                  type="radio"
-                  name="payment-method"
-                  value="Gift Card"
-                />
-                Gift Card
-              </label>
-            </div>
-            <div>
-              <h5>Shipping Method:</h5>
-              <label class="radio-label">
-                <input
-                  class="radio-button"
-                  type="radio"
-                  name="shipping-method"
-                  value="Regular Parcel"
-                  checked
-                />
-                Regular Parcel
-              </label>
-              <label class="radio-label">
-                <input
-                  class="radio-button"
-                  type="radio"
-                  name="shipping-method"
-                  value="Expedited Parcel"
-                />
-                Expedited Parcel
-              </label>
-              <label class="radio-label">
-                <input
-                  class="radio-button"
-                  type="radio"
-                  name="shipping-method"
-                  value="Xpresspost"
-                />
-                Xpresspost
-              </label>
-              <label class="radio-label">
-                <input
-                  class="radio-button"
-                  type="radio"
-                  name="shipping-method"
-                  value="Priority"
-                />
-                Priority
-              </label>
+                <div class="rendered-display">
+                  <div class="radio-row">
+                    <h5>Payment Method:</h5>
+                    <label class="radio-label">
+                      <input
+                        class="radio-button"
+                        type="radio"
+                        name="payment-method"
+                        value="Credit/Debit"
+                        checked
+                      />
+                      Credit/Debit
+                    </label>
+                    <label class="radio-label">
+                      <input
+                        class="radio-button"
+                        type="radio"
+                        name="payment-method"
+                        value="PayPal"
+                      />
+                      PayPal
+                    </label>
+                    <label>
+                      <input
+                        class="radio-button"
+                        type="radio"
+                        name="payment-method"
+                        value="Gift Card"
+                      />
+                      Gift Card
+                    </label>
+                  </div>
+                  <div class="radio-row">
+                    <h5>Shipping Method:</h5>
+                    <label class="radio-label">
+                      <input
+                        class="radio-button"
+                        type="radio"
+                        name="shipping-method"
+                        value="Regular Parcel"
+                        checked
+                      />
+                      Regular Parcel
+                    </label>
+                    <label class="radio-label">
+                      <input
+                        class="radio-button"
+                        type="radio"
+                        name="shipping-method"
+                        value="Expedited Parcel"
+                      />
+                      Expedited Parcel
+                    </label>
+                    <label class="radio-label">
+                      <input
+                        class="radio-button"
+                        type="radio"
+                        name="shipping-method"
+                        value="Xpresspost"
+                      />
+                      Xpresspost
+                    </label>
+                    <label class="radio-label">
+                      <input
+                        class="radio-button"
+                        type="radio"
+                        name="shipping-method"
+                        value="Priority"
+                      />
+                      Priority
+                    </label>
+                  </div>
+                </div>
+                <p class="rendered-subtitle">
+                  Example radio buttons and their labels used in a checkout form
+                  for selecting payment and shipping methods when buying
+                  official merchandise.
+                </p>
+              </div>
             </div>
           </section>
 
           <section class="element">
             <!-- Figcaption reference: https://www.w3schools.com/tags/tag_figcaption.asp -->
 
-            <h3>Image as a Link</h3>
+            <h3 class="element-title">Image as a Link</h3>
 
-            <h4>CSS Selector:</h4>
+            <h4 class="element-subheading">CSS Selector:</h4>
             <p>.image-link</p>
 
-            <h4>Sample Code:</h4>
-            <pre><code>&lt;a class="image-link" href="discography.html#album_name"&gt; 
+            <div class="demo-container">
+              <div class="code-container">
+                <h4 class="element-subheading">Sample Code:</h4>
+
+                <pre
+                  class="code-block"
+                ><code>&lt;a class="image-link" href="discography.html#album_name"&gt; 
   &lt;img
     src="./images/going-somewhere-300px.png" 
     alt="Album art for Rock Artist's latest release: 'ALBUM NAME'" 
   /&gt; 
 &lt;/a&gt;</code></pre>
+              </div>
+              <div class="rendered-container">
+                <h4 class="element-subheading">Rendered Elements:</h4>
+                <div class="rendered-display">
+                  <h5>Letters Pt. 1 (2026)</h5>
 
-            <h4>Rendered Elements:</h4>
-
-            <div>
-              <p>
-                Example of an image link used on an album cover, leading to the
-                album's section on the discography page of the website.
-              </p>
-
-              <h5>ALBUM NAME (2026)</h5>
-
-              <figure>
-                <a class="image-link" href="discography.html#album_name">
-                  <img
-                    src="./images/going-somewhere-300px.png"
-                    alt="Album art for the Rock Artist's latest release: 'ALBUM NAME'"
-                  />
-                </a>
-                <figcaption>Album art by: Artist Name</figcaption>
-              </figure>
+                  <figure>
+                    <a class="image-link" href="discography.html#album_name">
+                      <img
+                        src="./images/going-somewhere-300px.png"
+                        alt="Album art for the Rock Artist's latest release: 'ALBUM NAME'"
+                      />
+                    </a>
+                    <figcaption>Album art by: Artist Name</figcaption>
+                  </figure>
+                </div>
+                <p class="rendered-subtitle">
+                  Example of an image link used on an album cover, leading to
+                  the album's section on the discography page of the website.
+                </p>
+              </div>
             </div>
           </section>
         </div>
@@ -481,42 +538,50 @@
 
         <div class="elements-container">
           <section class="element">
-            <h3>Main Navigation</h3>
-            <h4>CSS Selectors:</h4>
+            <h3 class="element-title">Main Navigation</h3>
+            <h4 class="element-subheading">CSS Selectors:</h4>
             <p>
               #main-nav
               <br />
               .button-nav
             </p>
 
-            <h4>Sample Code:</h4>
-            <pre><code>&lt;nav id="main-nav"&gt;
+            <div class="demo-container">
+              <div class="code-container">
+                <h4 class="element-subheading">Sample Code:</h4>
+                <pre class="code-block"><code>&lt;nav id="main-nav"&gt;
   &lt;a class="button-nav" href="#latest"&gt;Latest&lt;/a&gt;
   &lt;a class="button-nav" href="#artist"&gt;Artist&lt;/a&gt;
   &lt;a class="button-nav" href="#music"&gt;Music&lt;/a&gt;
   &lt;a class="button-nav" href="#tour"&gt;Tour&lt;/a&gt;
   &lt;a class="button-nav" href="#store"&gt;Store&lt;/a&gt;
 &lt;/nav&gt;</code></pre>
+              </div>
+              <div class="rendered-container">
+                <h4 class="element-subheading">Rendered Element:</h4>
 
-            <h4>Rendered Element:</h4>
-            <p>
-              Example of a navigation bar with buttons that would lead to
-              relevant sections/pages of the website.
-            </p>
+                <div class="rendered-display">
+                  <nav id="main-nav">
+                    <a class="button-nav" href="#latest">Latest</a>
+                    <a class="button-nav" href="#artist">Artist</a>
+                    <a class="button-nav" href="#music">Music</a>
+                    <a class="button-nav" href="#tour">Tour</a>
+                    <a class="button-nav" href="store.html">Store</a>
+                  </nav>
+                </div>
 
-            <nav id="main-nav">
-              <a class="button-nav" href="#latest">Latest</a>
-              <a class="button-nav" href="#artist">Artist</a>
-              <a class="button-nav" href="#music">Music</a>
-              <a class="button-nav" href="#tour">Tour</a>
-              <a class="button-nav" href="store.html">Store</a>
-            </nav>
+                <p class="rendered-subtitle">
+                  Example of a navigation bar with buttons that would lead to
+                  relevant sections/pages of the website.
+                </p>
+              </div>
+            </div>
           </section>
 
           <section id="product-listings" class="element">
-            <h3>Merchandise Listings</h3>
+            <h3 class="element-title">Merchandise Listings</h3>
 
-            <h4>CSS Selectors:</h4>
+            <h4 class="element-subheading">CSS Selectors:</h4>
             <p>
               .product-listing
               <br />
@@ -527,9 +592,13 @@
               .price
             </p>
 
-            <h4>Sample Code:</h4>
+            <div class="demo-container">
+              <div class="code-container">
+                <h4 class="element-subheading">Sample Code:</h4>
 
-            <pre><code>&lt;a href="store.html#item_01" class="product-listing"&gt;
+                <pre
+                  class="code-block"
+                ><code>&lt;a href="store.html#item_01" class="product-listing"&gt;
   &lt;p class="product-name"&gt;ALBUM NAME CD (Signed)&lt;/p&gt;
   &lt;img
     class="product-image"
@@ -538,26 +607,32 @@
   /&gt;
   &lt;p class="price"&gt;$19.99 CAD&lt;/p&gt;
 &lt;/a&gt;</code></pre>
+              </div>
 
-            <h4>Rendered Element:</h4>
-            <p>
-              Example of a product listing on an official merchandise store
-              page, leading to a more detailed product page.
-            </p>
+              <div class="rendered-container">
+                <h4 class="element-subheading">Rendered Element:</h4>
+                <div class="rendered-display">
+                  <a href="store.html#item_01" class="product-listing">
+                    <p class="product-name">ALBUM NAME CD (Signed)</p>
+                    <img
+                      class="product-image"
+                      src="./images/redcdcase_200x176px.png"
+                      alt="ALBUM NAME CD - Signed by Artist"
+                    />
+                    <p class="price">$19.99 CAD</p>
+                  </a>
+                </div>
 
-            <a href="store.html#item_01" class="product-listing">
-              <p class="product-name">ALBUM NAME CD (Signed)</p>
-              <img
-                class="product-image"
-                src="./images/redcdcase_200x176px.png"
-                alt="ALBUM NAME CD - Signed by Artist"
-              />
-              <p class="price">$19.99 CAD</p>
-            </a>
+                <p class="rendered-subtitle">
+                  Example of a product listing on an official merchandise store
+                  page, leading to a more detailed product page.
+                </p>
+              </div>
+            </div>
 
-            <h3>Tour Listings</h3>
+            <h3 class="element-title">Tour Listings</h3>
 
-            <h4>CSS Selectors</h4>
+            <h4 class="element-subheading">CSS Selectors</h4>
             <p>
               .tour-listing
               <br />
@@ -570,38 +645,51 @@
               .tickets-link
             </p>
 
-            <h4>Sample Code:</h4>
+            <div class="demo-container">
+              <div class="code-container">
+                <h4 class="element-subheading">Sample Code:</h4>
 
-            <pre><code>&lt;a href="https://www.ticketmaster.ca/" class="tour-listing"&gt;
-  &lt;p class="tour-location"&gt;City, Province&lt;/p&gt;
+                <pre
+                  class="code-block"
+                ><code>&lt;a href="https://www.ticketmaster.ca/" class="tour-listing"&gt;
+  &lt;div class="tour-header-row"&gt;
+    &lt;p class="tour-location"&gt;City, Province&lt;/p&gt;
+    &lt;p class="tour-date"&gt;Date&lt;/p&gt;
+  &lt;/div&gt;
   &lt;ul class="tour-listing-details"&gt;
     &lt;li class="tour-details-item"&gt;Venue Name&lt;/li&gt;
-    &lt;li class="tour-details-item"&gt;Date&lt;/li&gt;
     &lt;li class="tour-details-item"&gt;Time&lt;/li&gt;
   &lt;/ul&gt;
   &lt;button class="tickets-link"&gt;Get Tickets&lt;/button&gt;
 &lt;/a&gt;</code></pre>
+              </div>
+              <div class="rendered-container">
+                <h4 class="element-subheading">Rendered Element:</h4>
+                <div class="rendered-display">
+                  <a href="https://www.ticketmaster.ca/" class="tour-listing">
+                    <div class="tour-header-row">
+                      <p class="tour-location">City, Province</p>
+                      <p class="tour-date">Date</p>
+                    </div>
+                    <ul class="tour-listing-details">
+                      <li class="tour-details-item">Venue Name</li>
+                      <li class="details-item">Time</li>
+                    </ul>
+                    <button class="tickets-link">Get Tickets</button>
+                  </a>
+                </div>
 
-            <h4>Rendered Element:</h4>
-            <p>
-              Example of one tour date listing on tour section, leading to an
-              external ticketing site.
-            </p>
-
-            <a href="https://www.ticketmaster.ca/" class="tour-listing">
-              <p class="tour-location">City, Province</p>
-              <ul class="tour-listing-details">
-                <li class="tour-details-item">Venue Name</li>
-                <li class="tour-details-item">Date</li>
-                <li class="details-item">Time</li>
-              </ul>
-              <button class="tickets-link">Get Tickets</button>
-            </a>
+                <p class="rendered-subtitle">
+                  Example of one tour date listing on tour section, leading to
+                  an external ticketing site.
+                </p>
+              </div>
+            </div>
           </section>
 
           <section id="payment-form" class="element">
-            <h3>Payment Form</h3>
-            <h4>CSS Selectors:</h4>
+            <h3 class="element-title">Payment Form</h3>
+            <h4 class="element-subheading">CSS Selectors:</h4>
             <p>
               #payment
               <br />
@@ -624,9 +712,11 @@
               .button-submit
             </p>
 
-            <h4>Sample Code:</h4>
+            <div class="demo-container">
+              <div class="code-container">
+                <h4 class="element-subheading">Sample Code:</h4>
 
-            <pre><code>&lt;form&gt;
+                <pre class="code-block"><code>&lt;form&gt;
   &lt;section id="payment"&gt;
     &lt;div class="checkout-field"&gt;
       &lt;h5&gt;Payment Method:&lt;/h5&gt;
@@ -750,148 +840,164 @@
 
   &lt;input class="button-submit" type="submit" value="Pay Now" /&gt;
 &lt;/form&gt;</code></pre>
-            <h4>Rendered Elements:</h4>
+              </div>
 
-            <form>
-              <section id="payment">
-                <div class="checkout-field">
-                  <h5>Payment Method:</h5>
-                  <label class="radio-label">
+              <div class="rendered-container">
+                <h4 class="element-subheading">Rendered Elements:</h4>
+                <div class="rendered-display">
+                  <form>
+                    <section id="payment">
+                      <div class="checkout-field">
+                        <h5>Payment Method:</h5>
+                        <label class="radio-label">
+                          <input
+                            class="radio-button"
+                            type="radio"
+                            name="payment-method"
+                            value="Credit/Debit"
+                            checked
+                          />
+                          Credit/Debit
+                        </label>
+
+                        <label class="radio-label">
+                          <input
+                            class="radio-button"
+                            type="radio"
+                            name="payment-method"
+                            value="PayPal"
+                          />
+                          PayPal
+                        </label>
+
+                        <label>
+                          <input
+                            class="radio-button"
+                            type="radio"
+                            name="payment-method"
+                            value="Gift Card"
+                          />
+                          Gift Card
+                        </label>
+                      </div>
+
+                      <div class="checkout-field">
+                        <label class="input-label" for="card-number"
+                          >Card Number:
+                        </label>
+                        <input
+                          id="card-number"
+                          class="input-field"
+                          type="text"
+                          placeholder="1234-5678-9101-1213"
+                        />
+
+                        <label class="input-label" for="card-exp"
+                          >Expiry Date:
+                        </label>
+                        <input
+                          id="card-exp"
+                          class="input-field"
+                          type="text"
+                          placeholder="MM/YY"
+                        />
+
+                        <label class="input-label" for="card-cvc"
+                          >Security Code:
+                        </label>
+                        <input
+                          id="card-cvc"
+                          class="input-field"
+                          type="text"
+                          placeholder="CVC"
+                        />
+                      </div>
+                    </section>
+
+                    <section id="billing">
+                      <h5>Billing Address:</h5>
+
+                      <div class="name-row">
+                        <label class="input-label" for="first-name"
+                          >First Name:
+                        </label>
+                        <input
+                          id="first-name"
+                          class="input-field"
+                          type="text"
+                          placeholder="Jane"
+                        />
+                        <label class="input-label" for="last-name"
+                          >Last Name:
+                        </label>
+                        <input
+                          id="last-name"
+                          class="input-field"
+                          type="text"
+                          placeholder="Doe"
+                        />
+                      </div>
+
+                      <div class="address-row">
+                        <label class="input-label" for="ad-line-1"
+                          >Address Line 1:
+                        </label>
+                        <input
+                          id="ad-line-1"
+                          class="input-field"
+                          type="text"
+                          placeholder="House no. and street"
+                        />
+                        <label class="input-label" for="ad-line-2"
+                          >Address Line 2 (Optional):
+                        </label>
+                        <input
+                          id="ad-line-2"
+                          class="input-field"
+                          type="text"
+                          placeholder="Apartment, unit, suite, etc."
+                        />
+                      </div>
+
+                      <div class="address-row">
+                        <label class="input-label" for="city">Town/City:</label>
+                        <input id="city" class="input-field" type="text" />
+                        <label class="input-label" for="province"
+                          >Province/State:
+                        </label>
+                        <input id="province" class="input-field" type="text" />
+                        <label class="input-label" for="zip"
+                          >Postal Code:
+                        </label>
+                        <input id="zip" class="input-field" type="text" />
+                      </div>
+
+                      <label class="input-label" for="email"
+                        >Email Address:
+                      </label>
+                      <input
+                        id="email"
+                        class="input-field"
+                        type="text"
+                        placeholder="e.g. you@email.com"
+                      />
+                    </section>
+
                     <input
-                      class="radio-button"
-                      type="radio"
-                      name="payment-method"
-                      value="Credit/Debit"
-                      checked
+                      class="button-submit"
+                      type="submit"
+                      value="Pay Now"
                     />
-                    Credit/Debit
-                  </label>
-
-                  <label class="radio-label">
-                    <input
-                      class="radio-button"
-                      type="radio"
-                      name="payment-method"
-                      value="PayPal"
-                    />
-                    PayPal
-                  </label>
-
-                  <label>
-                    <input
-                      class="radio-button"
-                      type="radio"
-                      name="payment-method"
-                      value="Gift Card"
-                    />
-                    Gift Card
-                  </label>
+                  </form>
                 </div>
-
-                <div class="checkout-field">
-                  <label class="input-label" for="card-number"
-                    >Card Number:
-                  </label>
-                  <input
-                    id="card-number"
-                    class="input-field"
-                    type="text"
-                    placeholder="1234-5678-9101-1213"
-                  />
-
-                  <label class="input-label" for="card-exp"
-                    >Expiry Date:
-                  </label>
-                  <input
-                    id="card-exp"
-                    class="input-field"
-                    type="text"
-                    placeholder="MM/YY"
-                  />
-
-                  <label class="input-label" for="card-cvc"
-                    >Security Code:
-                  </label>
-                  <input
-                    id="card-cvc"
-                    class="input-field"
-                    type="text"
-                    placeholder="CVC"
-                  />
-                </div>
-              </section>
-
-              <section id="billing">
-                <h5>Billing Address:</h5>
-
-                <div class="name-row">
-                  <label class="input-label" for="first-name"
-                    >First Name:
-                  </label>
-                  <input
-                    id="first-name"
-                    class="input-field"
-                    type="text"
-                    placeholder="Jane"
-                  />
-                  <label class="input-label" for="last-name">Last Name: </label>
-                  <input
-                    id="last-name"
-                    class="input-field"
-                    type="text"
-                    placeholder="Doe"
-                  />
-                </div>
-
-                <div class="address-row">
-                  <label class="input-label" for="ad-line-1"
-                    >Address Line 1:
-                  </label>
-                  <input
-                    id="ad-line-1"
-                    class="input-field"
-                    type="text"
-                    placeholder="House no. and street"
-                  />
-                  <label class="input-label" for="ad-line-2"
-                    >Address Line 2 (Optional):
-                  </label>
-                  <input
-                    id="ad-line-2"
-                    class="input-field"
-                    type="text"
-                    placeholder="Apartment, unit, suite, etc."
-                  />
-                </div>
-
-                <div class="address-row">
-                  <label class="input-label" for="city">Town/City:</label>
-                  <input id="city" class="input-field" type="text" />
-                  <label class="input-label" for="province"
-                    >Province/State:
-                  </label>
-                  <input id="province" class="input-field" type="text" />
-                  <label class="input-label" for="zip">Postal Code: </label>
-                  <input id="zip" class="input-field" type="text" />
-                </div>
-
-                <label class="input-label" for="email">Email Address: </label>
-                <input
-                  id="email"
-                  class="input-field"
-                  type="text"
-                  placeholder="e.g. you@email.com"
-                />
-              </section>
-
-              <input class="button-submit" type="submit" value="Pay Now" />
-            </form>
+              </div>
+            </div>
           </section>
 
           <section id="cart-styling" class="element">
-            <h3>Cart</h3>
+            <h3 class="element-title">Cart</h3>
 
-            <h4>CSS Selectors:</h4>
+            <h4 class="element-subheading">CSS Selectors:</h4>
             <p>
               .checkout-cart
               <br />
@@ -904,9 +1010,11 @@
               .button-checkout
             </p>
 
-            <h4>Sample Code:</h4>
+            <div class="demo-container">
+              <div class="code-container">
+                <h4 class="element-subheading">Sample Code:</h4>
 
-            <pre><code>&lt;ul class="checkout-cart"&gt;
+                <pre class="code-block"><code>&lt;ul class="checkout-cart"&gt;
   &lt;li class="cart-item"&gt;
     &lt;h5&gt;(Limited Ed.) ALBUM2 CD - Gold&lt;/h5&gt;
     &lt;img
@@ -935,42 +1043,46 @@
 &lt;a href="checkout.html" class="button-checkout"
   &gt;&lt;button&gt;Checkout&lt;/button&gt;&lt;/a
 &gt;</code></pre>
+              </div>
+              <div class="rendered-container">
+                <h4 class="element-subheading">Rendered Elements:</h4>
 
-            <h4>Rendered Elements:</h4>
-            <p>
-              Example of a shopping cart section displaying selected items,
-              prices, a subtotal, and a checkout button.
-            </p>
+                <div class="rendered-display">
+                  <ul class="checkout-cart">
+                    <li class="cart-item">
+                      <h5>(Limited Ed.) ALBUM2 CD - Gold</h5>
+                      <img
+                        src="./images/goldcd_175px.png"
+                        alt="Limited Edition ALBUM2 CD - Gold"
+                        class="cart-item"
+                      />
+                      <p class="cart-item-price">$35.99 CAD</p>
+                    </li>
+                    <li class="cart-item">
+                      <h5>ALBUM NAME CD (Signed)</h5>
+                      <img
+                        src="./images/redcdcase_200x176px.png"
+                        alt="Limited Edition ALBUM2 CD - Gold"
+                        class="cart-item"
+                      />
+                      <p class="cart-item-price">$19.99 CAD</p>
+                    </li>
+                  </ul>
+                  <div class="subtotal-box">
+                    <h2>Subtotal:</h2>
+                  </div>
+                  <p>$55.98 CAD</p>
 
-            <ul class="checkout-cart">
-              <li class="cart-item">
-                <h5>(Limited Ed.) ALBUM2 CD - Gold</h5>
-                <img
-                  src="./images/goldcd_175px.png"
-                  alt="Limited Edition ALBUM2 CD - Gold"
-                  class="cart-item"
-                />
-                <p class="cart-item-price">$35.99 CAD</p>
-              </li>
-              <li class="cart-item">
-                <h5>ALBUM NAME CD (Signed)</h5>
-                <img
-                  src="./images/redcdcase_200x176px.png"
-                  alt="Limited Edition ALBUM2 CD - Gold"
-                  class="cart-item"
-                />
-                <p class="cart-item-price">$19.99 CAD</p>
-              </li>
-            </ul>
-
-            <div class="subtotal-box">
-              <h2>Subtotal:</h2>
+                  <a href="checkout.html" class="button-checkout"
+                    ><button>Checkout</button></a
+                  >
+                </div>
+                <p class="rendered-subtitle">
+                  Example of a shopping cart section displaying selected items,
+                  prices, a subtotal, and a checkout button.
+                </p>
+              </div>
             </div>
-            <p>$55.98 CAD</p>
-
-            <a href="checkout.html" class="button-checkout"
-              ><button>Checkout</button></a
-            >
           </section>
         </div>
       </section>

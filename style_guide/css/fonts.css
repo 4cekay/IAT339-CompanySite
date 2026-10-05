@@ -7,6 +7,8 @@
   font-style: normal;
 }
 
+/* Reference: https://cssgradient.io/blog/css-gradient-text/ */
+
 .logotype {
   font-family: "Rothenburg Decorative", serif;
   font-weight: 400;
@@ -53,6 +55,18 @@
   color: white;
 }
 
+.rendered-display {
+  font-family: "TT2020 Style E", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.rendered-subtitle {
+  font-family: "TT2020 Style E", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
 @font-face {
   font-family: "TT2020 Style E - Italic";
   src: url("./fonts/TT2020StyleE-Italic.ttf") format("truetype");
@@ -70,5 +84,18 @@
   font-weight: 200;
   font-style: normal;
   text-transform: uppercase;
-  color: var(--base-taupe);
+}
+
+.element-title {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.element-subheading {
+  font-family: "TT2020 Style G", serif;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
 }
