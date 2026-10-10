@@ -502,3 +502,34 @@ li {
 #button-pay:focus {
   border-color: rgb(88, 165, 11);
 }
+
+.paragraph-list {
+  margin: 0;
+  padding: 0 0 1rem 1rem;
+
+  list-style-type: disc;
+}
+.paragraph-item {
+  color: var(--base-white);
+}
+
+.brand-paragraph {
+  color: var(--base-white);
+}
+
+.font-branding {
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1rem solid var(--base-black);
+}
+
+.font-information {
+  margin: 0;
+  padding: 0 0 0rem 1rem;
+
+  list-style-type: none;
+}
+.font-info-item {
+  color: var(--base-white);
+}
