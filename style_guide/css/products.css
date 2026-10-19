@@ -1,0 +1,134 @@
+/* Header Section */
+
+header {
+  /* Page-specific updates/additions from main.css */
+  gap: 0.5rem;
+}
+
+#page-title {
+  margin: 1rem;
+
+  font-size: 3.5rem;
+
+  text-shadow: 0.05rem 0.1rem 0.1rem rgba(201, 192, 192, 0.068);
+}
+
+.nav-main {
+  justify-content: space-evenly;
+}
+
+/* Header Section */
+
+/* GENERAL */
+
+#info-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+#main-content {
+  gap: 3rem;
+}
+
+/* GENERAL */
+
+/* Listings */
+
+.element-heading {
+  color: whitesmoke;
+}
+
+.listings-container {
+  display: flex;
+  flex-direction: column;
+
+  border-top: 0.15rem solid rgba(211, 211, 211, 0.281);
+  border-bottom: 0.15rem solid rgba(211, 211, 211, 0.281);
+}
+
+/* Listings */
+
+/* Tour Section */
+
+.show-list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+
+  padding: 3rem 2.5rem;
+}
+
+.show {
+  padding: 1rem;
+
+  background-color: rgba(113, 30, 30, 0.591);
+  border: solid 0.5em rgb(26, 1, 1);
+
+  transition: all 0.2s ease-in-out;
+}
+.show:hover,
+.show:focus {
+  background-color: rgba(209, 100, 81, 0.591);
+}
+
+.tour-listing-details {
+  margin-bottom: 1em;
+}
+/* Tour Section */
+
+/* Limited Section*/
+
+.limited-list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+
+  gap: 7em;
+
+  padding: 3rem 2.5rem;
+}
+
+.lim-item {
+  padding: 1em 2em;
+
+  transition: all 0.25s ease-in-out;
+  background-color: transparent;
+}
+.lim-item:hover,
+.lim-item:focus {
+  background-color: rgba(255, 174, 0, 0.644);
+}
+
+/* Limited Section*/
+
+/* Merch Section */
+
+.merch-list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  gap: 8.5em;
+
+  padding: 3rem 2.5rem;
+}
+
+.merch-item {
+  padding: 1em 2em;
+
+  transition: all 0.25s ease-in-out;
+  background-color: transparent;
+}
+
+.merch-item:hover,
+.merch-item:focus {
+  background-color: rgba(121, 71, 66, 0.644);
+}
+
+/* Merch Section */

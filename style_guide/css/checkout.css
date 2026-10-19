@@ -1,0 +1,122 @@
+/* Reference: https://forum.squarespace.com/topic/183809-css-button-not-clickable-because-of-overlapping-header/ */
+
+#home-button {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+
+  z-index: 999;
+
+  padding: 1rem;
+  background: rgba(165, 42, 42, 0.514);
+
+  border: 0.3rem solid rgba(174, 101, 101, 0.765);
+  border-radius: 2rem;
+
+  font-style: none;
+  color: azure;
+
+  width: fit-content;
+
+  transition: all 0.25s ease-in-out;
+}
+#home-button:hover,
+#home-button:focus {
+  background: rgba(164, 103, 103, 0.662);
+  color: rgb(33, 3, 10);
+}
+
+/* Header Section */
+
+header {
+  flex-direction: column;
+  gap: 1rem;
+
+  justify-content: space-between;
+
+  text-align: center;
+
+  background-color: var(--dark-red);
+}
+
+.nav-main {
+  justify-content: space-evenly;
+  background-color: var(--base-red);
+  border: 1px black solid;
+}
+
+/* Header Section */
+
+/* Listings */
+
+.element-heading {
+  color: whitesmoke;
+
+  margin-bottom: 0;
+}
+/* Listings */
+
+/* Cart Section */
+
+#cart {
+  padding: 0 3rem;
+
+  padding-bottom: 2.5rem;
+  border-bottom: 0.15rem solid rgba(0, 0, 0, 0.406);
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: row;
+
+  padding: 1rem 3.5rem;
+
+  gap: 7rem;
+}
+
+.cart-list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.cart-item h5 {
+  color: whitesmoke;
+  padding-bottom: 1rem;
+
+  border-bottom: 0.15em solid rgba(245, 245, 245, 0.438);
+}
+
+.cart-item-data {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+.cart-item-data img {
+  width: 8em;
+  height: auto;
+}
+.price {
+  color: whitesmoke;
+}
+
+.subtotal-box {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+
+  color: whitesmoke;
+}
+
+/* Cart Section */
+
+/* Billing Form Section */
+
+#payment {
+  padding: 0 3rem;
+}
+
+/* Billing Form Section */
