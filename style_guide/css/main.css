@@ -10,6 +10,7 @@
   --base-taupe: #b69d95;
 
   --dark-red: #5d1010;
+  --dark-black: #1e1818;
   --bruise-pink: #c88590;
 
 
@@ -233,6 +234,7 @@ p {
   font-size: 1.15rem;
   color: var(--base-light-grey);
 }
+
 .rendered-subtitle {
   margin: 0.5rem 1rem;
   padding: 0.5rem 0;
@@ -385,11 +387,29 @@ li {
   transition: all 0.2s;
 }
 
-/* Tour Listing */
+.add-to-cart-button {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  align-self: center;
+  margin-right: 1.5rem;
+  padding: 0.6rem 1rem;
 
-.tour-listing {
-  text-decoration: none;
+  border: rgb(98, 97, 97) solid 0.15rem;
+  border-radius: 0.15rem;
+  background-color: var(--base-light-grey);
+
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
 }
+.add-to-cart-button:hover,
+.add-to-cart-button:focus {
+  color: rgb(126, 93, 0);
+  border-color: rgb(197, 144, 1);
+  background-color: var(--button-bg-hover);
+}
+
+/* Tour Listing */
 
 .tour-header-row {
   display: flex;
@@ -414,15 +434,19 @@ li {
 }
 
 .tickets-link {
-  padding: 0.5rem 0.75rem;
-
-  font-size: 0.8rem;
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  align-self: center;
+  margin-right: 1.5rem;
+  padding: 0.6rem 1.5rem;
 
   border: rgb(98, 97, 97) solid 0.15rem;
   border-radius: 0.15rem;
   background-color: var(--base-light-grey);
 
-  transition: all 0.15s;
+    font-weight: 700;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
 }
 .tickets-link:hover,
 .tickets-link:focus {
@@ -504,8 +528,8 @@ li {
 }
 
 .paragraph-list {
-  margin: 0;
-  padding: 0 0 1rem 1rem;
+  margin: 1rem;
+  padding: 0rem 0 1rem 1rem;
 
   list-style-type: disc;
 }
@@ -514,6 +538,7 @@ li {
 }
 
 .brand-paragraph {
+  margin: 1rem;
   color: var(--base-white);
 }
 

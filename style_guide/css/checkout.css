@@ -51,64 +51,149 @@ header {
 
 .element-heading {
   color: whitesmoke;
-
   margin-bottom: 0;
 }
-/* Listings */
-
-/* Cart Section */
 
 #cart {
-  padding: 0 3rem;
-
-  padding-bottom: 2.5rem;
-  border-bottom: 0.15rem solid rgba(0, 0, 0, 0.406);
+  padding: 0 3rem 2.5rem;
+  border-top: 0.15rem solid rgba(211, 211, 211, 0.281);
+  border-bottom: 0.15rem solid rgba(211, 211, 211, 0.281);
 }
 
 .cart-container {
-  display: flex;
-  flex-direction: row;
-
-  padding: 1rem 3.5rem;
-
-  gap: 7rem;
+  display: grid;
+  grid-template-columns: 1fr 22rem; /* items | summary */
+  gap: 4rem;
+  align-items: start;
+  padding: 3rem 0;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
+/* item list */
 .cart-list {
   list-style: none;
-
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  flex: 3;
 }
 
-.cart-item h5 {
-  color: whitesmoke;
-  padding-bottom: 1rem;
+li.cart-item {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  grid-template-rows: auto auto 1fr;
+  column-gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 0.1rem solid rgba(245, 245, 245, 0.25);
+}
+li.cart-item:first-child {
+  padding-top: 0;
+}
 
-  border-bottom: 0.15em solid rgba(245, 245, 245, 0.438);
+/* cart item text and imgs */
+li.cart-item h5 {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0 0 0.5rem;
+  padding: 0;
+  color: whitesmoke;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 .cart-item-data {
-  display: flex;
-  flex-direction: row;
+  display: contents;
+}
 
-  justify-content: space-between;
-}
 .cart-item-data img {
-  width: 8em;
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  width: 100%;
+  max-width: 10rem;
   height: auto;
+  align-self: start;
 }
-.price {
+
+.cart-item-data .cart-description {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0 0 0.5rem;
+  color: rgba(245, 245, 245, 0.7);
+}
+
+.cart-item-data .price {
+  grid-column: 2;
+  grid-row: 3;
+  margin: 0rem 3;
+  color: rgba(245, 245, 245, 0.7);
+}
+
+.cart-item-data .remove-link {
+  grid-column: 2;
+  grid-row: 4;
+  color: rgba(245, 245, 245, 0.7);
+  text-decoration: underline;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.cart-item-data .remove-link:hover {
+  opacity: 0.7;
+}
+
+.remove-link {
   color: whitesmoke;
+  text-decoration: none;
+  border-bottom: 0.1rem solid whitesmoke;
+  padding-bottom: 0.1rem;
+}
+.remove-link:hover {
+  opacity: 0.7;
 }
 
 .subtotal-box {
+  position: sticky;
+  top: 2rem;
   display: flex;
   flex-direction: column;
-  flex: 2;
-
+  gap: 1rem;
+  padding: 1.5rem;
   color: whitesmoke;
+  background-color: rgba(113, 30, 30, 0.35);
+  border: 0.1rem solid rgba(245, 245, 245, 0.2);
+}
+.subtotal-box h2,
+.subtotal-box p {
+  margin: 0;
+}
+.subtotal-box p {
+  font-size: 1.25rem;
+}
+.subtotal-box small {
+  color: rgba(245, 245, 245, 0.6);
+}
+
+
+.button-checkout {
+  display: block;
+  text-decoration: none;
+}
+
+.button-checkout .tickets-link {
+  width: 100%;
+  padding: 1rem;
+  background-color: #a80000;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.button-checkout .tickets-link:hover {
+  background-color: #d10000;
 }
 
 /* Cart Section */
@@ -117,6 +202,20 @@ header {
 
 #payment {
   padding: 0 3rem;
+  border-bottom: 0.15rem solid rgba(211, 211, 211, 0.281);
+}
+
+
+.payment-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--base-red);
+  color: var(--base-white);
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
 
 /* Billing Form Section */

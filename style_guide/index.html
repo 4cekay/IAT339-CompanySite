@@ -7,6 +7,8 @@
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/flexbox.css" rel="stylesheet" />
     <link href="css/fonts.css" rel="stylesheet" />
+    <link href="css/products.css" rel="stylesheet" />
+    <link href="css/checkout.css" rel="stylesheet" />
 
     <!-- Shopping Cart Icon -->
     <link
@@ -642,6 +644,8 @@ voluptate ut in optio quis&lt;/p&gt;</code
               <li class="selector-item">.product-name</li>
               <li class="selector-item">.product-image</li>
               <li class="selector-item">.price</li>
+              <li class="selector-item">.description</li>
+              <li class="selector-item">.add-to-cart-button</li>
             </ul>
 
             <div class="demo-container">
@@ -657,7 +661,9 @@ voluptate ut in optio quis&lt;/p&gt;</code
     src="./images/redcdcase_200x176px.png"
     alt="ALBUM NAME CD - Signed by Artist"
   /&gt;
+  &lt;p class="description"&gt;Limited edition signed copy&lt;/p&gt;
   &lt;p class="price"&gt;$19.99 CAD&lt;/p&gt;
+  &lt;button class="add-to-cart-button"&gt;Add to cart&lt;/button&gt;
 &lt;/a&gt;</code></pre>
               </div>
 
@@ -671,7 +677,9 @@ voluptate ut in optio quis&lt;/p&gt;</code
                       src="./images/redcdcase_200x176px.png"
                       alt="ALBUM NAME CD - Signed by Artist"
                     />
+                    <p class="description">Limited edition signed copy</p>
                     <p class="price">$19.99 CAD</p>
+                    <button class="add-to-cart-button">Add to cart</button>
                   </a>
                 </div>
 
@@ -689,9 +697,13 @@ voluptate ut in optio quis&lt;/p&gt;</code
             <ul class="selectors-list">
               <li class="selector-item">.tour-listing</li>
               <li class="selector-item">.tour-location</li>
+              <li class="selector-item">.tour-date</li>
               <li class="selector-item">.tour-listing-details</li>
               <li class="selector-item">.tour-details-item</li>
+              <li class="selector-item">.tour-header-row</li>
               <li class="selector-item">.tickets-link</li>
+              <li class="selector-item">.show-list</li>
+              <li class="selector-item">.show</li> 
             </ul>
 
             <div class="demo-container">
@@ -700,32 +712,40 @@ voluptate ut in optio quis&lt;/p&gt;</code
 
                 <pre
                   class="code-block"
-                ><code>&lt;a href="https://www.ticketmaster.ca/" class="tour-listing"&gt;
-  &lt;div class="tour-header-row"&gt;
-    &lt;p class="tour-location"&gt;City, Province&lt;/p&gt;
-    &lt;p class="tour-date"&gt;Date&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;ul class="tour-listing-details"&gt;
-    &lt;li class="tour-details-item"&gt;Venue Name&lt;/li&gt;
-    &lt;li class="tour-details-item"&gt;Time&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;button class="tickets-link"&gt;Get Tickets&lt;/button&gt;
-&lt;/a&gt;</code></pre>
+                ><code>&lt;ul class="show-list"&gt;
+  &lt;li class="show"&gt;
+    &lt;a href="https://www.ticketmaster.ca/" class="tour-listing"&gt;
+      &lt;div class="tour-header-row"&gt;
+        &lt;p class="tour-location"&gt;City, Province&lt;/p&gt;
+        &lt;p class="tour-date"&gt;Date&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;ul class="tour-listing-details"&gt;
+        &lt;li class="tour-details-item"&gt;Venue Name&lt;/li&gt;
+        &lt;li class="tour-details-item"&gt;Time&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;button class="tickets-link"&gt;Get Tickets&lt;/button&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
               </div>
               <div class="rendered-container">
                 <h4 class="element-subheading">Rendered Element:</h4>
                 <div class="rendered-display">
-                  <a href="https://www.ticketmaster.ca/" class="tour-listing">
-                    <div class="tour-header-row">
-                      <p class="tour-location">Vancouver, BC</p>
-                      <p class="tour-date">April 1, 2027</p>
-                    </div>
-                    <ul class="tour-listing-details">
-                      <li class="tour-details-item">Vogue Theatre</li>
-                      <li class="tour-details-item">7:00 P.M.</li>
-                    </ul>
-                    <button class="tickets-link">Get Tickets</button>
-                  </a>
+                  <ul class="show-list">
+                    <li class="show">
+                      <a href="https://www.ticketmaster.ca/" class="tour-listing">
+                        <div class="tour-header-row">
+                          <p class="tour-location">Vancouver, BC</p>
+                          <p class="tour-date">April 1, 2027</p>
+                        </div>
+                        <ul class="tour-listing-details">
+                          <li class="tour-details-item">Vogue Theatre</li>
+                          <li class="tour-details-item">7:00 P.M.</li>
+                        </ul>
+                        <button class="tickets-link">Get Tickets</button>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
 
                 <p class="rendered-subtitle">
@@ -1034,12 +1054,7 @@ voluptate ut in optio quis&lt;/p&gt;</code
                       </section>
                     </div>
 
-                    <input
-                      id="button-pay"
-                      class="button-submit"
-                      type="submit"
-                      value="Pay Now"
-                    />
+                    <button class="payment-button">Pay Now</button>
                   </form>
                 </div>
               </div>
@@ -1052,9 +1067,13 @@ voluptate ut in optio quis&lt;/p&gt;</code
             <h4 class="element-subheading">CSS Selectors:</h4>
 
             <ul class="selectors-list">
-              <li class="selector-item">.checkout-cart</li>
+              <li class="selector-item">.cart-container</li>
+              <li class="selector-item">.cart-list</li>
               <li class="selector-item">.cart-item</li>
+              <li class="selector-item">.cart-item-data</li>
+              <li class="selector-item">.cart-description</li>
               <li class="selector-item">.cart-item-price</li>
+              <li class="selector-item">.remove-link</li>
               <li class="selector-item">.subtotal-box</li>
               <li class="selector-item">.button-checkout</li>
             </ul>
@@ -1063,73 +1082,87 @@ voluptate ut in optio quis&lt;/p&gt;</code
               <div class="code-container">
                 <h4 class="element-subheading">Sample Code:</h4>
 
-                <pre class="code-block"><code>&lt;ul class="checkout-cart"&gt;
-  &lt;li class="cart-item"&gt;
-    &lt;h5&gt;(Limited Ed.) ALBUM2 CD - Gold&lt;/h5&gt;
-    &lt;img
-      src="./images/goldcd_175px.png"
-      alt="Limited Edition ALBUM2 CD - Gold"
-      class="cart-item"
-    /&gt;
-    &lt;p class="cart-item-price"&gt;$35.99 CAD&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li class="cart-item"&gt;
-    &lt;h5&gt;ALBUM NAME CD (Signed)&lt;/h5&gt;
-    &lt;img
-      src="./images/redcdcase_200x176px.png"
-      alt="Limited Edition ALBUM2 CD - Gold"
-      class="cart-item"
-    /&gt;
-    &lt;p class="cart-item-price"&gt;$19.99 CAD&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+                <pre class="code-block"><code>&lt;div class="cart-container"&gt;
+    &lt;ul class="cart-list"&gt;
+      &lt;li class="cart-item"&gt;
+        &lt;h5&gt;(Limited Ed.) ALBUM2 CD - Gold&lt;/h5&gt;
+        &lt;div class="cart-item-data"&gt;
+          &lt;img
+            src="./images/goldcd_175px.png"
+            alt="Limited Edition ALBUM2 CD - Gold"
+          /&gt;
+          &lt;p class="cart-description"&gt;Limited edition gold signed copy&lt;/p&gt;
+          &lt;p class="price"&gt;$35.99 CAD&lt;/p&gt;
+          &lt;a href="#" class="remove-link"&gt;Remove from cart&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
 
-&lt;div class="subtotal-box"&gt;
-  &lt;h2&gt;Subtotal:&lt;/h2&gt;
-&lt;/div&gt;
-&lt;p&gt;$55.98 CAD&lt;/p&gt;
+      &lt;li class="cart-item"&gt;
+        &lt;h5&gt;ALBUM NAME CD (Signed)&lt;/h5&gt;
+        &lt;div class="cart-item-data"&gt;
+          &lt;img
+            src="./images/redcdcase_200x176px.png"
+            alt="Limited Edition ALBUM2 CD - Gold"
+            class="cart-item"
+          /&gt;
+          &lt;p class="cart-description"&gt;Limited edition signed copy&lt;/p&gt;
+          &lt;p class="price"&gt;$19.99 CAD&lt;/p&gt;
+          &lt;a href="#" class="remove-link"&gt;Remove from cart&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
 
-&lt;a href="checkout.html" class="button-checkout"
-  &gt;&lt;button&gt;Checkout&lt;/button&gt;&lt;/a
-&gt;</code></pre>
+    &lt;div class="subtotal-box"&gt;
+      &lt;h2&gt;Subtotal:&lt;/h2&gt;
+      &lt;p&gt;$55.98 CAD&lt;/p&gt;
+
+      &lt;a href="checkout.html" class="button-checkout"
+        &gt;&lt;button class="tickets-link"&gt;Checkout&lt;/button&gt;&lt;/a
+      &gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
               </div>
               <div class="rendered-container">
                 <h4 class="element-subheading">Rendered Elements:</h4>
 
                 <div class="rendered-display">
-                  <ul class="checkout-cart">
-                    <li class="cart-item">
-                      <h5>(Limited Ed.) ALBUM2 CD - Gold</h5>
-                      <img
-                        src="./images/goldcd_175px.png"
-                        alt="Limited Edition ALBUM2 CD - Gold"
-                        class="cart-item"
-                      />
-                      <p class="cart-item-price">$35.99 CAD</p>
-                    </li>
-                    <li class="cart-item">
-                      <h5>ALBUM NAME CD (Signed)</h5>
-                      <img
-                        src="./images/redcdcase_200x176px.png"
-                        alt="Limited Edition ALBUM2 CD - Gold"
-                        class="cart-item"
-                      />
-                      <p class="cart-item-price">$19.99 CAD</p>
-                    </li>
-                  </ul>
-                  <div class="subtotal-box">
-                    <h2>Subtotal:</h2>
-                  </div>
-                  <p>$55.98 CAD</p>
+                  <div class="cart-container">
+                    <ul class="cart-list">
+                      <li class="cart-item">
+                        <h5>(Limited Ed.) ALBUM2 CD - Gold</h5>
+                        <div class="cart-item-data">
+                          <img
+                            src="./images/goldcd_175px.png"
+                            alt="Limited Edition ALBUM2 CD - Gold"
+                          />
+                          <p class="cart-description">Limited edition gold signed copy</p>
+                          <p class="price">$35.99 CAD</p>
+                          <a href="#" class="remove-link">Remove from cart</a>
+                        </div>
+                      </li>
 
-                  <a href="checkout.html" class="button-checkout"
-                    ><button class="tickets-link">Checkout</button></a
-                  >
-                </div>
-                <p class="rendered-subtitle">
-                  Example of a shopping cart section displaying selected items,
-                  prices, a subtotal, and a checkout button.
-                </p>
+                      <li class="cart-item">
+                        <h5>ALBUM NAME CD (Signed)</h5>
+                        <div class="cart-item-data">
+                          <img
+                            src="./images/redcdcase_200x176px.png"
+                            alt="Limited Edition ALBUM2 CD - Gold"
+                            class="cart-item"
+                          />
+                          <p class="cart-description">Limited edition signed copy</p>
+                          <p class="price">$19.99 CAD</p>
+                          <a href="#" class="remove-link">Remove from cart</a>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="subtotal-box">
+                      <h2>Subtotal:</h2>
+                      <p>$55.98 CAD</p>
+
+                      <a href="checkout.html" class="button-checkout"
+                        ><button class="tickets-link">Checkout</button></a>
+                    </div>
+                  </div>
               </div>
             </div>
           </section>
