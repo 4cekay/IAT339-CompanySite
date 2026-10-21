@@ -1,0 +1,14 @@
+Citations:
+
+Fonts: 
+
+- Rothenburg Decorative by Typographer Mediengestaltung (2000), from https://www.1001fonts.com/rothenburg-decorative-font.html
+Copyright © Typographer Mediengestaltung, 2000. All rights reserved. Full character set added by D. Steffmann
+
+
+Loading + Layout References: 
+
+https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types
+https://www.w3schools.com/tags/att_img_loading.asp
+https://web.dev/learn/performance/optimize-web-fonts
+https://getbootstrap.com/docs/5.0/layout/breakpoints/

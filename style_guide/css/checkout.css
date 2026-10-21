@@ -1,4 +1,6 @@
-/* Reference: https://forum.squarespace.com/topic/183809-css-button-not-clickable-because-of-overlapping-header/ */
+/* Reference: https://forum.squarespace.com/topic/183809-css-button-not-clickable-because-of-overlapping-header/ 
+              https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template-columns
+*/
 
 #home-button {
   position: fixed;
@@ -164,6 +166,8 @@ li.cart-item h5 {
   color: whitesmoke;
   background-color: rgba(113, 30, 30, 0.35);
   border: 0.1rem solid rgba(245, 245, 245, 0.2);
+
+  width: 80%;
 }
 .subtotal-box h2,
 .subtotal-box p {
@@ -201,7 +205,10 @@ li.cart-item h5 {
 /* Billing Form Section */
 
 #payment {
-  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+
+  padding: 3rem 0;
   border-bottom: 0.15rem solid rgba(211, 211, 211, 0.281);
 }
 
@@ -224,3 +231,24 @@ li.cart-item h5 {
 }
 
 /* Billing Form Section */
+
+/* RESPONSIVE LAYOUT */
+
+@media (max-width: 996px) {
+  .cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .cart-item {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+
+  .subtotal-box {
+    position: static;
+    width: 100%;
+  }
+}

@@ -170,6 +170,10 @@ p {
   color: var(--base-light-grey);
 }
 
+.selector-box {
+  display: flex;
+  flex-direction: column;
+}
 .selectors-list {
   margin: 0;
   padding: 0 0 1rem 1rem;
@@ -213,6 +217,20 @@ p {
   color: var(--base-light-grey);
 }
 
+/*
+Source - https://stackoverflow.com/a/248013
+Posted by adambox, modified by community. See post 'Timeline' for change history
+Retrieved 2026-10-20, License - CC BY-SA 4.0
+*/
+
+pre {
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
 .rendered-container {
   padding: 0 0rem;
 
@@ -239,6 +257,12 @@ p {
 
   font-size: 1rem;
   color: var(--base-taupe);
+}
+
+figcaption {
+  font-size: 0.75rem;
+
+  width: fit-content;
 }
 
 /* 
@@ -567,4 +591,79 @@ li {
 }
 .font-info-item {
   color: var(--base-white);
+}
+
+/* RESPONSIVE LAYOUT RULES */
+
+@media screen and (max-width: 992px) {
+  .element {
+    gap: 2rem;
+  }
+
+  .selector-box {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .selector-box h4 {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .demo-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .selectors-list {
+    padding-bottom: none;
+  }
+
+  .image-link img {
+    width: 70%;
+
+    margin-bottom: 0.5rem;
+  }
+
+  .add-to-cart-button {
+    font-size: 0.7rem;
+  }
+}
+
+.tour-listing {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tour-listing p,
+.tour-listing li {
+  font-size: 0.7rem;
+}
+
+.tickets-link {
+  padding: 0.75rem 0.75rem;
+}
+
+@media screen and (max-width: 1272px) {
+  .demo-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .input-row {
+    flex-direction: column;
+  }
+
+  #payment {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    justify-content: space-around;
+  }
+
+  .checkout-field h5 {
+    margin-top: 0;
+  }
 }
