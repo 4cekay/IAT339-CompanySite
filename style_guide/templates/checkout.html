@@ -1,4 +1,5 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>P01: HTML + CSS</title>
@@ -39,7 +40,7 @@
         <div class="cart-container">
           <ul class="cart-list">
             <li class="cart-item">
-              <h5>(Limited Ed.) ALBUM2 CD - Gold</h5>
+              <p class="cart-item-name">(Limited Ed.) ALBUM2 CD - Gold</p>
               <div class="cart-item-data">
                 <img
                   src="../images/goldcd_175px.png"
@@ -52,7 +53,7 @@
             </li>
 
             <li class="cart-item">
-              <h5>ALBUM NAME CD (Signed)</h5>
+              <p class="cart-item-name">ALBUM NAME CD (Signed)</p>
               <div class="cart-item-data">
                 <img
                   src="../images/redcdcase_200x176px.png"
@@ -66,7 +67,7 @@
             </li>
 
             <li class="cart-item">
-              <h5>ALBUM NAME CD (Signed)</h5>
+              <p class="cart-item-name">ALBUM NAME CD (Signed)</p>
               <div class="cart-item-data">
                 <img
                   src="../images/redcdcase_200x176px.png"
@@ -84,9 +85,7 @@
             <h2>Subtotal:</h2>
             <p>$55.98 CAD</p>
 
-            <a href="checkout.html" class="button-checkout"
-              ><button class="tickets-link">Checkout</button></a
-            >
+            <button class="payment-button">Checkout</button>
           </div>
         </div>
       </section>
@@ -101,7 +100,7 @@
             <div class="input-row">
               <section id="payment-methods">
                 <div class="checkout-field">
-                  <h5>Payment Method:</h5>
+                  <p class="input-title">Payment Method:</p>
                   <label class="radio-label">
                     <input
                       class="radio-button"
@@ -168,7 +167,7 @@
               </section>
 
               <section id="billing">
-                <h5>Billing Address:</h5>
+                <p class="input-title">Billing Address:</p>
 
                 <div class="name-row">
                   <label class="input-label" for="first-name"
@@ -248,14 +247,13 @@
             <button class="payment-button">Pay Now</button>
           </form>
         </div>
-      </div>
       </section>
+    </div>
 
       <!-- PAYMENT SECTION // -->
 
       <!-- // CITATIONS SECTION -->
-    </div>
-
+    
     <footer></footer>
   </body>
 </html>

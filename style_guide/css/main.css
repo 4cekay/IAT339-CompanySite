@@ -186,7 +186,6 @@ p {
   flex-direction: row;
 
   gap: 3rem;
-  justify-content: baseline;
 }
 .code-container {
   padding: 0 0rem;
@@ -238,7 +237,7 @@ p {
   margin: 0.5rem 1rem;
   padding: 0.5rem 0;
 
-  font-size: 1;
+  font-size: 1rem;
   color: var(--base-taupe);
 }
 
@@ -456,6 +455,7 @@ li {
 }
 .tickets-link:hover,
 .tickets-link:focus {
+  align-self: center;
   color: rgb(126, 93, 0);
   border-color: rgb(197, 144, 1);
   background-color: var(--button-bg-hover);

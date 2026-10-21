@@ -14,7 +14,7 @@
   border-radius: 2rem;
 
   text-decoration: none;
-  font-style: none;
+  font-style: normal;
   color: azure;
 
   width: fit-content;
@@ -127,7 +127,7 @@ li.cart-item h5 {
 .cart-item-data .price {
   grid-column: 2;
   grid-row: 3;
-  margin: 0rem 3;
+  margin: 0rem 3rem 0.5rem 0;
   color: rgba(245, 245, 245, 0.7);
 }
 
