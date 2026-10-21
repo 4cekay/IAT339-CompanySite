@@ -174,7 +174,7 @@
             <h4 class="element-subheading">CSS Selector:</h4>
 
             <ul class="selectors-list">
-              <li class="selector-item">.button-nav</li>
+              <li class="selector-item">.nav-link</li>
             </ul>
 
             <div class="demo-container">
@@ -182,14 +182,14 @@
                 <h4 class="element-subheading">Sample Code:</h4>
                 <pre
                   class="code-block"
-                ><code>&lt;a href="#page-title" class="button-nav"&gt;Home&lt;/a&gt;</code></pre>
+                ><code>&lt;a href="#page-title" class="nav-link"&gt;Home&lt;/a&gt;</code></pre>
               </div>
 
               <div class="rendered-container">
                 <h4 class="element-subheading">Rendered Element:</h4>
 
                 <div class="rendered-display">
-                  <a class="button-nav nav-link" href="#page-title">Home</a>
+                  <a class="nav-link" href="#page-title">Home</a>
                 </div>
                 <p class="rendered-subtitle">
                   Example of a navigation bar button that would lead back to the
@@ -599,18 +599,18 @@ voluptate ut in optio quis&lt;/p&gt;</code
 
             <ul class="selectors-list">
               <li class="selector-item">#main-nav</li>
-              <li class="selector-item">.button-nav</li>
+              <li class="selector-item">.nav-link</li>
             </ul>
 
             <div class="demo-container">
               <div class="code-container">
                 <h4 class="element-subheading">Sample Code:</h4>
                 <pre class="code-block"><code>&lt;nav id="main-nav"&gt;
-  &lt;a class="button-nav" href="#latest"&gt;Latest&lt;/a&gt;
-  &lt;a class="button-nav" href="#artist"&gt;Artist&lt;/a&gt;
-  &lt;a class="button-nav" href="#music"&gt;Music&lt;/a&gt;
-  &lt;a class="button-nav" href="#tour"&gt;Tour&lt;/a&gt;
-  &lt;a class="button-nav" href="#store"&gt;Store&lt;/a&gt;
+  &lt;a class="nav-link" href="#latest"&gt;Latest&lt;/a&gt;
+  &lt;a class="nav-link" href="#artist"&gt;Artist&lt;/a&gt;
+  &lt;a class="nav-link" href="#music"&gt;Music&lt;/a&gt;
+  &lt;a class="nav-link" href="#tour"&gt;Tour&lt;/a&gt;
+  &lt;a class="nav-link" href="#store"&gt;Store&lt;/a&gt;
 &lt;/nav&gt;</code></pre>
               </div>
               <div class="rendered-container">
@@ -618,11 +618,15 @@ voluptate ut in optio quis&lt;/p&gt;</code
 
                 <div class="rendered-display">
                   <nav id="main-nav">
-                    <a class="button-nav" href="#latest">Latest</a>
-                    <a class="button-nav" href="#artist">Artist</a>
-                    <a class="button-nav" href="#music">Music</a>
-                    <a class="button-nav" href="#tour">Tour</a>
-                    <a class="button-nav" href="store.html">Store</a>
+                    <a class="nav-link" href="#">Latest</a>
+                    <a class="nav-link" href="#">Artist</a>
+                    <a class="nav-link" href="#">Music</a>
+                    <a class="nav-link" href="./templates/products.html#tour"
+                      >Tour</a
+                    >
+                    <a class="nav-link" href="./templates/products.html#limited"
+                      >Store</a
+                    >
                   </nav>
                 </div>
 
@@ -670,7 +674,7 @@ voluptate ut in optio quis&lt;/p&gt;</code
               <div class="rendered-container">
                 <h4 class="element-subheading">Rendered Element:</h4>
                 <div class="rendered-display">
-                  <a href="store.html#item_01" class="product-listing">
+                  <a href="#" class="product-listing">
                     <p class="product-name">ALBUM NAME CD (Signed)</p>
                     <img
                       class="product-image"
@@ -679,7 +683,7 @@ voluptate ut in optio quis&lt;/p&gt;</code
                     />
                     <p class="description">Limited edition signed copy</p>
                     <p class="price">$19.99 CAD</p>
-                    <button class="add-to-cart-button">Add to cart</button>
+                    <p class="add-to-cart-button">Add to Cart</p>
                   </a>
                 </div>
 
@@ -703,16 +707,14 @@ voluptate ut in optio quis&lt;/p&gt;</code
               <li class="selector-item">.tour-header-row</li>
               <li class="selector-item">.tickets-link</li>
               <li class="selector-item">.show-list</li>
-              <li class="selector-item">.show</li> 
+              <li class="selector-item">.show</li>
             </ul>
 
             <div class="demo-container">
               <div class="code-container">
                 <h4 class="element-subheading">Sample Code:</h4>
 
-                <pre
-                  class="code-block"
-                ><code>&lt;ul class="show-list"&gt;
+                <pre class="code-block"><code>&lt;ul class="show-list"&gt;
   &lt;li class="show"&gt;
     &lt;a href="https://www.ticketmaster.ca/" class="tour-listing"&gt;
       &lt;div class="tour-header-row"&gt;
@@ -733,7 +735,11 @@ voluptate ut in optio quis&lt;/p&gt;</code
                 <div class="rendered-display">
                   <ul class="show-list">
                     <li class="show">
-                      <a href="https://www.ticketmaster.ca/" class="tour-listing">
+                      <a
+                        target="_blank"
+                        href="https://www.ticketmaster.ca/"
+                        class="tour-listing"
+                      >
                         <div class="tour-header-row">
                           <p class="tour-location">Vancouver, BC</p>
                           <p class="tour-date">April 1, 2027</p>
@@ -742,7 +748,7 @@ voluptate ut in optio quis&lt;/p&gt;</code
                           <li class="tour-details-item">Vogue Theatre</li>
                           <li class="tour-details-item">7:00 P.M.</li>
                         </ul>
-                        <button class="tickets-link">Get Tickets</button>
+                        <p class="tickets-link">Get Tickets</p>
                       </a>
                     </li>
                   </ul>
@@ -1135,9 +1141,11 @@ voluptate ut in optio quis&lt;/p&gt;</code
                             src="./images/goldcd_175px.png"
                             alt="Limited Edition ALBUM2 CD - Gold"
                           />
-                          <p class="cart-description">Limited edition gold signed copy</p>
+                          <p class="cart-description">
+                            Limited edition gold signed copy
+                          </p>
                           <p class="price">$35.99 CAD</p>
-                          <a href="#" class="remove-link">Remove from cart</a>
+                          <a href="#" class="remove-link">Remove from Cart</a>
                         </div>
                       </li>
 
@@ -1149,9 +1157,11 @@ voluptate ut in optio quis&lt;/p&gt;</code
                             alt="Limited Edition ALBUM2 CD - Gold"
                             class="cart-item"
                           />
-                          <p class="cart-description">Limited edition signed copy</p>
+                          <p class="cart-description">
+                            Limited edition signed copy
+                          </p>
                           <p class="price">$19.99 CAD</p>
-                          <a href="#" class="remove-link">Remove from cart</a>
+                          <a href="#" class="remove-link">Remove from Cart</a>
                         </div>
                       </li>
                     </ul>
@@ -1160,9 +1170,11 @@ voluptate ut in optio quis&lt;/p&gt;</code
                       <p>$55.98 CAD</p>
 
                       <a href="checkout.html" class="button-checkout"
-                        ><button class="tickets-link">Checkout</button></a>
+                        ><p class="tickets-link">Checkout</p></a
+                      >
                     </div>
                   </div>
+                </div>
               </div>
             </div>
           </section>
@@ -1284,7 +1296,7 @@ voluptate ut in optio quis&lt;/p&gt;</code
                 <li class="font-info-item">
                   1001 Fonts → free use license for commercial use
                 </li>
-                <br />
+
                 <li class="font-info-item">Use-case:</li>
                 <li class="font-info-item">
                   Logo type only, too difficult to read
@@ -1304,7 +1316,7 @@ voluptate ut in optio quis&lt;/p&gt;</code
                 <li class="font-info-item">
                   Google Fonts → free use license for commercial use
                 </li>
-                <br />
+
                 <li class="font-info-item">Use-case:</li>
                 <li class="font-info-item">Main page titles</li>
               </ul>
@@ -1322,7 +1334,7 @@ voluptate ut in optio quis&lt;/p&gt;</code
                 <li class="font-info-item">
                   Google Fonts → free use license for commercial use
                 </li>
-                <br />
+
                 <li class="font-info-item">Use-case:</li>
                 <li class="font-info-item">Section titles and dividers</li>
               </ul>
@@ -1340,7 +1352,7 @@ voluptate ut in optio quis&lt;/p&gt;</code
                 <li class="font-info-item">
                   Google Fonts → free use license for commercial use
                 </li>
-                <br />
+
                 <li class="font-info-item">Use-case:</li>
                 <li class="font-info-item">Subtitles and navigation text</li>
               </ul>
@@ -1358,7 +1370,7 @@ voluptate ut in optio quis&lt;/p&gt;</code
                 <li class="font-info-item">
                   Fontesk→ free use license for commercial use
                 </li>
-                <br />
+
                 <li class="font-info-item">Use-case:</li>
                 <li class="font-info-item">
                   Bigger version of the body text,quotes, or small descriptions
@@ -1379,7 +1391,7 @@ voluptate ut in optio quis&lt;/p&gt;</code
                 <li class="font-info-item">
                   Fontesk → free use license for commercial use
                 </li>
-                <br />
+
                 <li class="font-info-item">Use-case:</li>
                 <li class="font-info-item">
                   Main body text, small descriptions, and quotes
@@ -1392,17 +1404,23 @@ voluptate ut in optio quis&lt;/p&gt;</code
             <h3 class="element-title">Inspiration</h3>
             <h3 class="element-subheading">Graphic Design Inspiration</h3>
             <img
-              src="images/Graphics.png"
+              src="images/Graphics.avif"
               alt="Album Cover Design Collection"
+              loading="lazy"
             />
 
             <h3 class="element-subheading">Merchandise Inspiration</h3>
-            <img src="images/Merch.png" alt="Merchandise Design Collection" />
+            <img
+              src="images/Merch.avif"
+              alt="Merchandise Design Collection"
+              loading="lazy"
+            />
 
             <h3 class="element-subheading">Website Design Inspiration</h3>
             <img
-              src="images/WebsiteDesign.png"
+              src="images/WebsiteDesign.avif"
               alt="Website Design Collection"
+              loading="lazy"
             />
           </section>
         </div>

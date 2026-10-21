@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Rothenburg Decorative";
-  src: url("./fonts/RothenburgDecorative.ttf") format("truetype");
+  src: url("./fonts/RothenburgDecorative.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -18,8 +18,10 @@
 /* Main Components*/
 @font-face {
   font-family: "Instrument Serif";
-  src: url("./fonts/InstrumentSerif-Regular.ttf") format("truetype");
+  src: url("./fonts/InstrumentSerif-Regular.woff2") format("woff2");
   font-style: normal;
+
+  font-display: swap;
 }
 
 h1 {
@@ -63,8 +65,10 @@ h3 {
 
 @font-face {
   font-family: "Instrument Serif - Italic";
-  src: url("./fonts/InstrumentSerif-Italic.ttf") format("truetype");
+  src: url("./fonts/InstrumentSerif-Italic.woff2") format("woff2");
   font-style: italic;
+
+  font-display: swap;
 }
 
 .rendered-subtitle {
@@ -73,16 +77,11 @@ h3 {
 }
 
 @font-face {
-  font-family: "TT2020 Style G";
-  src: url("./fonts/TT2020StyleG-Regular-ASCII.ttf") format("truetype");
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
   font-family: "TT2020 Style E";
-  src: url("./fonts/TT2020StyleE-Regular.ttf") format("truetype");
+  src: url("./fonts/TT2020StyleE-Regular.woff2") format("woff2");
   font-style: normal;
+
+  font-display: swap;
 }
 
 p {
@@ -139,18 +138,20 @@ button {
   font-style: normal;
 }
 
-
-
 @font-face {
   font-family: "TT2020 Style E - Italic";
-  src: url("./fonts/TT2020StyleE-Italic.ttf") format("truetype");
+  src: url("./fonts/TT2020StyleE-Italic.woff2") format("woff2");
   font-style: italic;
+
+  font-display: swap;
 }
 
 @font-face {
   font-family: "TT2020 Style G";
-  src: url("./fonts/TT2020StyleG-Regular-ASCII.ttf") format("truetype");
+  src: url("./fonts/TT2020StyleG-Regular-ASCII.woff2") format("woff2");
   font-style: normal;
+
+  font-display: swap;
 }
 
 h4 {

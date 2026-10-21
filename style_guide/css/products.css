@@ -1,3 +1,30 @@
+#home-button {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+
+  z-index: 999;
+
+  padding: 1rem;
+  background: rgba(165, 42, 42, 0.514);
+
+  border: 0.3rem solid rgba(174, 101, 101, 0.765);
+  border-radius: 2rem;
+
+  text-decoration: none;
+  font-style: none;
+  color: azure;
+
+  width: fit-content;
+
+  transition: all 0.25s ease-in-out;
+}
+#home-button:hover,
+#home-button:focus {
+  background: rgba(164, 103, 103, 0.662);
+  color: rgb(33, 3, 10);
+}
+
 /* Header Section */
 
 header {
@@ -147,7 +174,6 @@ header {
 .lim-item:hover,
 .lim-item:focus {
   background-color: rgba(121, 71, 66, 0.644);
-
 }
 
 /* Limited Section*/
