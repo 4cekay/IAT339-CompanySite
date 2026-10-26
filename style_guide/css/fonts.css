@@ -287,3 +287,16 @@ h4 {
   margin: 0 0 0.5rem 0;
   color: var(--base-light-grey);
 }
+
+.price{
+  font-family: "TT2020 Style E", serif;
+  color: var(--base-light-grey);
+  font-size: 1.2rem;
+}
+
+.description{
+  font-family: "TT2020 Style G", serif;
+  color: var(--base-light-grey);
+  font-size: 1rem;
+}
+
