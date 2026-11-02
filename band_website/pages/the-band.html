@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Xynth3tic Official</title>
 
-    <link href=".css/flexbox.css" rel="stylesheet" />
+    <link href="/style_guide/css/flexbox.css" rel="stylesheet" />
     <link href="../css/fonts.css" rel="stylesheet" />
     <link href="../css/global.css" rel="stylesheet" />
-    <link href="../css/home.css" rel="stylesheet" />
     <link href="../css/the-band.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="home-cover">
+      <img class="bg-overlay" src="../images/bg.png" alt="red bg" />
+      <img
+        class="bg-img"
+        src="../images/fire-house.png"
+        alt="Xynth3tic Band Cover"
+      />
+    </div>
     <header class="flexbox">
       <nav class="nav-main flexbox">
-        <a href=".index.html"
+        <a href="../index.html"
           ><img class="logo-img" src="../images/logo.png" alt="Home"
         /></a>
         <div class="nav-links">
           <a class="nav-link" href="../index.html#latest">Latest</a>
-          <a class="current-link" href="the-band.html">The Band</a>
+          <a class="nav-link current-link" href="#">The Band</a>
           <a class="nav-link" href="tour.html">Tours</a>
           <a class="nav-link" href="discography.html">Discography</a>
           <a class="nav-link" href="webstore/webstore.html">Webstore</a>
@@ -28,22 +35,28 @@
       </nav>
     </header>
 
-    <div id="page-content">
-      <div class="home-cover">
-        <img class="bg-overlay" src="../images/bg.png" alt="red bg" />
-        <img
-          class="bg-img"
-          src="../images/fire house.png"
-          alt="Xynth3tic Band Cover"
-        />
-        <!-- goes over top -->
-        <img
-          class="logo-title"
-          src="../images/logo-title.png"
-          alt="Xynth3tic Band Members"
-        />
+    <div class="page-content">
+      <img
+        class="logo-title"
+        src="../images/logo-title.png"
+        alt="Xynth3tic Band Members"
+      />
+
+      <div class="flexbox">
+        <nav class="nav-band">
+          <a class="band-link" href="#about">About Us</a>
+          <a class="band-link" href="#xynthetic">Xynth3tic</a>
+          <a class="band-link" href="#acekay">4cekay</a>
+          <a class="band-link" href="#renito">Ren1to</a>
+        </nav>
+
+        <div class="profiles"></div>
       </div>
+
       <section id="about"></section>
+      <section id="xynthetic"></section>
+      <section id="acekay"></section>
+      <section id="renito"></section>
     </div>
   </body>
 </html>

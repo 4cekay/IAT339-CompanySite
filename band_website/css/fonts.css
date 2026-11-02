@@ -46,7 +46,7 @@ h3 {
   font-size: 1.25rem;
 }
 
-.element-subheading {
+.section-heading {
   font-family: "Instrument Serif", serif;
   font-weight: 200;
   font-style: normal;
@@ -100,18 +100,6 @@ button {
 }
 
 .paragraph-list {
-  font-family: "TT2020 Style E", serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.selectors-list {
-  font-family: "TT2020 Style E", serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.rendered-display {
   font-family: "TT2020 Style E", serif;
   font-weight: 100;
   font-style: normal;

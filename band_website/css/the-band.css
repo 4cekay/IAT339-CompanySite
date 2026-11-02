@@ -1,25 +1,36 @@
-/* sections */
-
-.bgoverlay {
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+/* General */
+.bg-img {
+  /* ref to positioning in 10 steps:http://awdsgn.com/classes/spr12/reed/reed-wk8/index.html and z-index */
+  z-index: -2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
 }
 
-.bg-img {
-    /* ref to positioning in 10 steps:http://awdsgn.com/classes/spr12/reed/reed-wk8/index.html and z-index */
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
+.bg-overlay {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.page-content {
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-title {
-    z-index: 1;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  z-index: 1;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  width: 25%;
+  height: auto;
 }
+
+/* General */
