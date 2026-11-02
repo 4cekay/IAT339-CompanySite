@@ -44,7 +44,7 @@ body {
   padding: 0;
 }
 
-/* Header Section */
+/* Header & Footer Sections */
 header {
   flex-direction: column;
   gap: 0.5rem;
@@ -54,6 +54,17 @@ header {
   text-align: center;
 
   /* background-color: var(--dark-red); */
+}
+
+footer {
+  flex-direction: column;
+
+  margin-top: 3rem;
+  padding: 2rem;
+
+  background-color: var(--dark-red);
+
+  text-align: center;
 }
 
 #page-title {
@@ -128,4 +139,14 @@ header {
 
   width: 100%;
   height: fit-content;
+}
+
+.divider-line {
+  margin: 0;
+  padding: 0;
+
+  width: 90%;
+
+  border-bottom: 0.3rem solid rgba(245, 245, 220, 0.185);
+  border-radius: 1rem;
 }
