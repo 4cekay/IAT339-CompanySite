@@ -1,56 +1,87 @@
-
 .nav-main {
-    display: flex;
+  display: flex;
 
-    align-items: center;
-    justify-content: flex-start;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%,rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0) 100%);
-    padding: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.5) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  padding: 1rem;
 }
 
 .logo-img {
-    margin: 0 0.5rem;
-    width: 3rem;
-    height: auto;
+  margin: 0 0.5rem;
+  width: 3rem;
+  height: auto;
 }
 
 .nav-links {
-    display: flex;
-    gap: 1rem;
-    margin-left: auto;
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
 }
 
 .nav-link {
-    padding: 1rem;
-    color: var(--base-white);
-    text-decoration: none;
-    transition: all 0.25s;
+  padding: 1rem;
+  color: var(--base-white);
+  text-decoration: none;
+  transition: all 0.25s;
 }
 
 .current-link {
-    padding: 1rem;
-    color: var(--base-red);
-    text-decoration: none;
-    transition: all 0.25s;
+  padding: 1rem;
+  color: var(--base-red);
+  text-decoration: none;
+  transition: all 0.25s;
 }
 
 .nav-link:hover,
-.nav-link:focus, 
+.nav-link:focus,
 .current-link:hover,
 .current-link:focus {
-    text-decoration: underline;
-    color: var(--base-taupe);
+  text-decoration: underline;
+  color: var(--base-taupe);
 }
-.nav-link:visited{
-    color: var(--base-white);
+.nav-link:visited {
+  color: var(--base-white);
 }
 
 /* Header Section */
 .cover-img {
-    /* ref to positioning in 10 steps:http://awdsgn.com/classes/spr12/reed/reed-wk8/index.html and z-index */
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+  /* ref to positioning in 10 steps:http://awdsgn.com/classes/spr12/reed/reed-wk8/index.html and z-index */
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Latest Section */
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 4rem;
+  padding: 1.5rem;
+
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.432);
+}
+
+.placeholder-box {
+  display: flex;
+
+  width: 75%;
+  height: 25rem;
+
+  background: white;
+
+  align-items: center;
+  justify-content: center;
 }

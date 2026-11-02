@@ -6,9 +6,9 @@
     <title>Xynth3tic Official</title>
 
     <link href="css/flexbox.css" rel="stylesheet" />
+    <link href="./css/fonts.css" rel="stylesheet" />
     <link href="./css/global.css" rel="stylesheet" />
     <link href="./css/home.css" rel="stylesheet" />
-
   </head>
   <body>
     <header class="flexbox">
@@ -19,33 +19,67 @@
       <p class="subtitle"><strong>Xynth3tic</strong> + Band Official Website</p>-->
 
       <nav class="nav-main flexbox">
-        <a href="index.html"><img class="logo-img" src="./images/logo.png" alt="Home"></a>
-        <div class="nav-links"></div>
+        <a href="index.html"
+          ><img class="logo-img" src="./images/logo.png" alt="Home"
+        /></a>
+        <div class="nav-links">
           <a class="nav-link" href="#latest">Latest</a>
           <a class="nav-link" href="./pages/the-band.html">The Band</a>
           <a class="nav-link" href="./pages/tour.html">Tours</a>
           <a class="nav-link" href="./pages/discography.html">Discography</a>
           <a class="nav-link" href="./pages/webstore/webstore.html">Webstore</a>
           <a class="nav-link" href="#contact">Contact Us</a>
-       </div>
+        </div>
       </nav>
 
       <nav class="home-cover">
-        <img class="cover-img" src="images/fire house.png" alt="Xynth3tic Band Cover" />
+        <!-- why is there a second nav? -->
+        <img
+          class="cover-img"
+          src="images/fire-house.png"
+          alt="Xynth3tic Band Cover"
+        />
       </nav>
-
     </header>
 
-    <div id="page-content">
+    <div class="page-content">
       <section id="latest">
-        <div class="content-container" id="update-gallery"></div> 
-
-
+        <div class="content-container" id="update-gallery">
+          <div class="placeholder-box">
+            <p>Placeholder</p>
+          </div>
+        </div>
       </section>
       <section id="newsletter">
-        <div class="content-container"></div>
+        <div class="content-container">
+          <h2>Join the fanclub!</h2>
+          <p>
+            Sign up for newsletter to never miss an update from Xynth3tic and
+            the Band. Stay up to date with the latest news and exclusive content
+            from the members!
+          </p>
+          <form id="newsletter-form">
+            <input
+              type="email"
+              name="email"
+              placeholder="e.g. you@example.com"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
       </section>
-      <section id="contact"></section>
+      <section id="contact">
+        <div class="content-container">
+          <h2>Contact Us</h2>
+          <p>
+            For inquiries, reach out to our team via email at:
+            <a href="mailto:info@xynthmus1c.com">info@xynthmus1c.com</a>
+          </p>
+        </div>
+      </section>
     </div>
+
+    <footer></footer>
   </body>
 </html>
