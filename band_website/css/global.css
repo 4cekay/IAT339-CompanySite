@@ -39,6 +39,24 @@ html {
   width: 100%;
 }
 
+.bg-img {
+  /* ref to positioning in 10 steps:http://awdsgn.com/classes/spr12/reed/reed-wk8/index.html and z-index */
+  z-index: -2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.bg-overlay {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -65,6 +83,12 @@ footer {
   background-color: var(--dark-red);
 
   text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links-list li {
+  list-style: none;
 }
 
 #page-title {
@@ -102,10 +126,13 @@ footer {
   height: auto;
 }
 
-.nav-links {
+.nav-links-list {
   display: flex;
   gap: 1rem;
   margin-left: auto;
+}
+.nav-links-list li {
+  list-style: none;
 }
 
 .nav-link {
