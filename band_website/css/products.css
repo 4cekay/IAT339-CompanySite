@@ -1,0 +1,207 @@
+#home-button {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+
+  z-index: 999;
+
+  padding: 1rem;
+  background: rgba(165, 42, 42, 0.514);
+
+  border: 0.3rem solid rgba(174, 101, 101, 0.765);
+  border-radius: 2rem;
+
+  text-decoration: none;
+  color: azure;
+
+  width: fit-content;
+
+  transition: all 0.25s ease-in-out;
+}
+#home-button:hover,
+#home-button:focus {
+  background: rgba(164, 103, 103, 0.662);
+  color: rgb(33, 3, 10);
+}
+
+/* Header Section */
+
+header {
+  /* Page-specific updates/additions from main.css */
+  gap: 0.5rem;
+}
+
+#page-title {
+  margin: 1rem;
+
+  font-size: 3.5rem;
+
+  text-shadow: 0.05rem 0.1rem 0.1rem rgba(201, 192, 192, 0.068);
+}
+
+.nav-main {
+  justify-content: space-evenly;
+}
+
+/* Header Section */
+
+/* GENERAL */
+
+#info-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+#main-content {
+  gap: 3rem;
+}
+
+/* GENERAL */
+
+/* Listings */
+
+.element-heading {
+  color: whitesmoke;
+}
+
+.listings-container {
+  display: flex;
+  flex-direction: column;
+
+  border-top: 0.15rem solid rgba(211, 211, 211, 0.281);
+  border-bottom: 0.15rem solid rgba(211, 211, 211, 0.281);
+}
+
+/* Listings */
+
+/* Tour Section */
+
+.show-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 0rem;
+}
+
+.show {
+  padding: 0;
+  background-color: var(--dark-red);
+  border: none;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.show:hover,
+.show:focus-within {
+  background-color: var(--button-dark-grey);
+  transform: translateY(-2px);
+}
+
+.tour-listing {
+  display: grid;
+  /* fractional divisions */
+  grid-template-columns: 7.5rem 1fr auto;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 1.5rem;
+  min-height: 7rem;
+}
+
+.tour-header-row {
+  display: contents;
+}
+
+.tour-date {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+  background-color: var(--base-red);
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tour-location {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+  margin: 0;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.tour-listing-details {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: start;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* Tour Section */
+
+/* Limited Section*/
+
+.limited-list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  gap: 2em;
+
+  padding: 1rem 0rem;
+}
+
+.lim-item {
+  padding: 1em 2em;
+
+  transition: all 0.25s ease-in-out;
+  background-color: transparent;
+}
+.lim-item:hover,
+.lim-item:focus {
+  background-color: rgba(121, 71, 66, 0.644);
+}
+
+/* Limited Section*/
+
+/* Merch Section */
+
+.merch-list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  gap: 2em;
+
+  padding: 1rem 0rem;
+}
+
+.merch-item {
+  padding: 1em 2em;
+
+  transition: all 0.25s ease-in-out;
+  background-color: transparent;
+}
+
+.merch-item:hover,
+.merch-item:focus {
+  background-color: rgba(121, 71, 66, 0.644);
+}
+
+/* Merch Section */

@@ -19,6 +19,169 @@
   box-sizing: border-box;
 }
 
+/* Logotype */
+
+@font-face {
+  font-family: "Rothenburg Decorative";
+  src: url("./fonts/RothenburgDecorative.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Reference: https://cssgradient.io/blog/css-gradient-text/ */
+
+.logotype {
+  font-family: "Rothenburg Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Main Components*/
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("./fonts/InstrumentSerif-Regular.woff2") format("woff2");
+  font-style: normal;
+
+  font-display: swap;
+}
+
+h1 {
+  font-family: "Instrument Serif", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Instrument Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.nav-link, .current-link {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.element-subheading {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+#citations {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Instrument Serif - Italic";
+  src: url("./fonts/InstrumentSerif-Italic.woff2") format("woff2");
+  font-style: italic;
+
+  font-display: swap;
+}
+
+.rendered-subtitle {
+  font-family: "Instrument Serif - Italic", serif;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "TT2020 Style E";
+  src: url("./fonts/TT2020StyleE-Regular.woff2") format("woff2");
+  font-style: normal;
+
+  font-display: swap;
+}
+
+p {
+  font-family: "TT2020 Style E", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+button {
+  font-family: "TT2020 Style G", serif;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.brand-paragraph {
+  font-family: "TT2020 Style G", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.paragraph-list {
+  font-family: "TT2020 Style E", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.selectors-list {
+  font-family: "TT2020 Style E", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.rendered-display {
+  font-family: "TT2020 Style E", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.input-field {
+  font-family: "TT2020 Style E", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.button-submit {
+  font-family: "TT2020 Style E", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.button-reset {
+  font-family: "TT2020 Style E", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT2020 Style E - Italic";
+  src: url("./fonts/TT2020StyleE-Italic.woff2") format("woff2");
+  font-style: italic;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT2020 Style G";
+  src: url("./fonts/TT2020StyleG-Regular-ASCII.woff2") format("woff2");
+  font-style: normal;
+
+  font-display: swap;
+}
+
+h4 {
+  font-family: "TT2020 Style G", serif;
+  font-weight: 150;
+  font-style: normal;
+}
+
 html {
   background-color: rgb(30, 24, 24);
 }
@@ -37,7 +200,7 @@ header {
 
   text-align: center;
 
-  background-color: var(--dark-red);
+  /* background-color: var(--dark-red); */
 }
 
 #page-title {
@@ -48,45 +211,8 @@ header {
   /* text-shadow: 0.05rem 0.1rem 0.1rem rgba(201, 192, 192, 0.068); */
 }
 
-.logotype {
-  background: -webkit-linear-gradient(
-    var(--base-red) 5%,
-    rgb(6, 3, 3) 35%,
-    var(--dark-red) 95%
-  );
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  -webkit-text-stroke: 0.5px rgb(20, 5, 5);
-}
-
 .subtitle {
   font-size: 1.25rem;
 
   color: var(--base-taupe);
 }
-
-.nav-main {
-  justify-content: space-between;
-  background-color: var(--base-red);
-  border: 1px black solid;
-}
-.nav-link {
-  padding: 1.5rem;
-
-  color: var(--base-white);
-  text-decoration: none;
-
-  transition: all 0.25s;
-}
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--base-taupe);
-  text-decoration: underline;
-}
-.nav-link:visited {
-  color: var(--base-white);
-}
-
-/* Header Section */

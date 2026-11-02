@@ -1,0 +1,25 @@
+/* sections */
+
+.bgoverlay {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-img {
+    /* ref to positioning in 10 steps:http://awdsgn.com/classes/spr12/reed/reed-wk8/index.html and z-index */
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.logo-title {
+    z-index: 1;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
