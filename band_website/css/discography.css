@@ -66,12 +66,12 @@
  
   .album-item {
     padding: 0.75em 1em;
-    flex: 0 1 calc(50% - 0.5rem); /* two per row on small screens */
+    flex: 0 1 calc(50% - 0.5rem);
   }
 }
  
 @media (max-width: 24rem) {
   .album-item {
-    flex-basis: 100%; /* one per row on very small screens */
+    flex-basis: 100%;
   }
 }
