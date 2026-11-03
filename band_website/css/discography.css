@@ -1,0 +1,77 @@
+/* GENERAL */
+
+#main-content {
+  gap: 3rem;
+}
+
+/* Listings */
+
+.element-heading {
+  color: whitesmoke;
+}
+
+.listings-container {
+  display: flex;
+  flex-direction: column;
+
+  border-top: 0.15rem solid rgba(211, 211, 211, 0.281);
+  border-bottom: 0.15rem solid rgba(211, 211, 211, 0.281);
+}
+
+/* Sections */
+
+.album-list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  gap: 2em;
+
+  padding: 1rem 0rem;
+}
+
+.album-item {
+  padding: 1em 2em;
+  list-style: none;
+
+  transition: all 0.25s ease-in-out;
+  background-color: transparent;
+}
+
+.album-image {
+  width: 15rem;
+  height: auto;
+}
+
+.album-item:hover,
+.album-item:focus {
+  background-color: rgba(121, 71, 66, 0.644);
+}
+
+.description {
+  color: var(--base-light-grey);
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  width: 15rem;
+}
+
+ 
+@media (max-width: 40rem) {
+  .album-list {
+    gap: 1rem;
+    justify-content: center;
+  }
+ 
+  .album-item {
+    padding: 0.75em 1em;
+    flex: 0 1 calc(50% - 0.5rem); /* two per row on small screens */
+  }
+}
+ 
+@media (max-width: 24rem) {
+  .album-item {
+    flex-basis: 100%; /* one per row on very small screens */
+  }
+}

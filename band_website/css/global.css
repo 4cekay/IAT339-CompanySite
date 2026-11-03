@@ -522,22 +522,27 @@ li {
 */
 
 /* Merchandise Listing */
-.product-listing {
+.product-listing,
+.album-listing {
   color: var(--base-light-grey);
 
   text-decoration: none;
 }
 .product-listing:hover,
-.product-listing:focus {
+.product-listing:focus,
+.album-listing:hover,
+.album-listing:focus {
   .product-name {
     color: #cf2242;
   }
 }
-.product-listing:visited {
+.product-listing:visited,
+.album-listing:visited {
   color: var(--base-light-grey);
 }
 
-.product-name {
+.product-name,
+.album-name {
   text-decoration: underline;
 
   transition: all 0.2s;
