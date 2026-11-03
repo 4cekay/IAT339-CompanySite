@@ -39,7 +39,9 @@ h3 {
 }
 
 .nav-link,
-.current-link {
+.current-link,
+.band-link,
+.checkout-link {
   font-family: "Instrument Serif", serif;
   font-weight: 200;
   font-style: normal;
@@ -143,4 +145,46 @@ h4 {
   font-family: "TT2020 Style G", serif;
   font-weight: 150;
   font-style: normal;
+}
+
+.font-information {
+  font-family: "TT2020 Style E", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.cart-item-name {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+  color: var(--base-light-grey);
+}
+
+.input-title {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+
+  font-size: 1.5rem;
+  padding: 1rem 0 0.5rem 0;
+  margin: 0 0 0.5rem 0;
+  color: var(--base-light-grey);
+}
+
+.price{
+  font-family: "TT2020 Style E", serif;
+  color: var(--base-light-grey);
+  font-size: 1.2rem;
+}
+
+.description{
+  font-family: "TT2020 Style G", serif;
+  color: var(--base-light-grey);
+  font-size: 1rem;
 }

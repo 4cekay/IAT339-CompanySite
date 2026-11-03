@@ -19,19 +19,26 @@ body {
 
   width: 25%;
   height: auto;
+
+  padding-bottom: 2rem;
+}
+
+.band-link {
+  color: var(--base-white);
+  text-decoration: underline;
 }
 
 /* Band Profiles Section*/
 .content-row {
   flex-direction: row;
-  gap: 2rem;
+  gap: 1rem;
 
-  padding: 0 3rem;
+  padding: 0 5rem;
 }
 
 .content-container {
   flex: 3;
-  gap: 6rem;
+  gap: 3rem;
 
   align-items: center;
   justify-content: center;
@@ -46,13 +53,13 @@ body {
   flex: 1;
   align-self: flex-start;
 
-  margin-right: 15rem;
+  margin-right: 5rem;
 
   max-width: fit-content;
 
   background: rgba(0, 0, 0, 0.272);
-  border: 0.25rem solid rgba(35, 30, 30, 0.58);
-  border-radius: 3.5rem;
+  border: 0.25rem solid var(--dark-black);
+  border-radius: 1.5rem;
 }
 
 .band-link-list {
@@ -71,8 +78,13 @@ body {
   flex-wrap: wrap;
 
   padding: 2rem;
-
   background: rgba(0, 0, 0, 0.397);
+  border: 0.25rem solid var(--dark-black);
+  border-radius: 1.5rem;
+}
+
+.section-title {
+  color: var(--bruise-pink);
 }
 
 .member-profile {
@@ -87,4 +99,5 @@ body {
 
 .section-text {
   padding: 2rem;
+  color: var(--base-taupe);
 }
